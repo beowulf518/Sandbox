@@ -1,0 +1,47 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="modal-wrapper {{spec.class}}">
+  <div class="modal">
+    <div class="close"></div>
+    <div class="wrapper">
+      <h1 class="title">Become a Contributor</h1>
+      <p class="description">
+        We’re looking for contributors to join in our efforts: Blockchain Enthusiasts, Voxel Artists, Game Designers, Blockchain Developers.
+      </p>
+      <p class="description">
+        Contributors will get specific benefits including the opportunity to invest at an early stage in the $SAND ICO that will be the game’s currency, as well as to make a difference in the evolution of the world creation genre.
+      </p>
+      <form class="modal-form" method="POST" action="https://formspree.io/ico-alert@pixowl.com" >
+        <input type="text" placeholder="Email address" name="EmailAddress">
+        <div class="input-group">
+          <input type="text" placeholder="First Name" name="FirstName">
+          <input type="text" placeholder="Last Name" name="LastName">
+        </div>
+        <div class="form-select">
+          <select name="Country">
+            <option value="" disabled>Select Country</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Mexico">Mexico</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <input type="text" placeholder="Ethereum Wallet Address" name="Walletaddress">
+          <input type="text" placeholder="Amount of ETH to invest" name="WalletAmount">
+        </div>
+        <input type="text" placeholder="How did you hear about us?" name="HearAbout">
+        <input type="text" placeholder="Linkedin/Github/Twitter Profile" name="SocialLink">
+        <div class="checkbox-group">
+          <input type="checkbox" id="scales" name="Feature" value="scales" checked />
+          <label for="scales">I'm at least 18 years old</label>
+        </div>
+        <button type="submit" class="button" href="#">Accept</button>
+        <p class="confirmation">Get a confirmation within the next 48 hours. By joining you automatically agree to join our email newsletter.</p>
+      </form>
+    </div>
+  </div>
+</div>
+{% endmacro %}

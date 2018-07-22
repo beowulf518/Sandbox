@@ -1,0 +1,40 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import '_modules/link/link.nunjucks' as link %}
+{% import '_modules/header/header.nunjucks' as header %}
+{% import '_modules/hero/hero.nunjucks' as hero %}
+{% import '_modules/smtag/smtag.nunjucks' as smTag %}
+{% import '_modules/lgtag/lgtag.nunjucks' as lgTag %}
+{% import '_modules/person/person.nunjucks' as person %}
+{% import '_modules/team-mobile/team-mobile.nunjucks' as teamMobile %}
+{% import '_modules/footer/footer.nunjucks' as footer %}
+
+{% block content %}
+<header class="zone zone-header">
+  {{ header.content() }}
+</header>
+<main id="content">
+  <div class="faqs">
+    <div class="faqs-headline">
+      <h1 class="faqs-title">{{ _.faqs.title }}</h1>
+    </div>
+    <div class="faqs-accordion">
+      <div class="wrapper">
+        {% for item in _.faqs.items %}
+        <div class="faqs-accordion-item">
+          <div class="content">
+            <h3 class="title">{{ item.title }}</h3>
+            <p class="description">{{ item.description }}</p>
+          </div>
+          <div class="toggle"></div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="zone footer-zone">
+    {{ footer.content({class: "wrapper" }) }}
+  </div>
+</main>
+{% endblock %}

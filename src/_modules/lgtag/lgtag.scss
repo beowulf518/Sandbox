@@ -1,0 +1,26 @@
+// lgtag styles
+
+.lgTag{
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+	&-img{
+		border-radius: 50%;
+	}
+
+	&-title{
+
+	}
+
+	&-text{
+		padding-left: 24px;
+		padding-right: 24px;
+		opacity: 0;
+
+		transition: opacity 0.4s;
+	}
+
+	&:focus .lgTag-text, &:hover .lgTag-text{
+		opacity: 1;
+	}
+}

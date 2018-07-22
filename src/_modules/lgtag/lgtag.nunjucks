@@ -1,0 +1,11 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="lgTag {{spec.class}}">
+  <img class="lgTag-img" src="{{spec.img}}" alt="">
+  <h3 class="lgTag-title">{{spec.title}}</h3>
+  <p class="lgTag-text">{{spec.subtitle}}</p>
+</div>
+{% endmacro %}

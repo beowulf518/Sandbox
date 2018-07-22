@@ -1,0 +1,16 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+
+<li class="{{ spec.class }} person animate">
+  <img class="person-photo" src="{{ spec.img }}" alt="">
+  <h3 class="person-name">
+    <span class="person-name_name">{{ spec.name }}</span>
+    <span class="person-name_position">{{ spec.position }}</span>
+  </h3>
+  <button data-person="{{ spec.id }}" class="person-cta">Read more</button>
+  <a href="{{ spec.linkedin }}" class="person-linkedin">
+    <img class="person-linkedin_img" src="../images/icon-linkedin.svg" alt="Linkedin">
+  </a>
+</li>
+{% endmacro %}

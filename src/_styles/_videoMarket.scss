@@ -1,0 +1,31 @@
+
+.videoMarket{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 70px 200px;
+	margin-bottom: 72px;
+
+	&-title{
+		margin-bottom: 76px;
+	}
+
+	&-game{
+		&_title{
+			color: var(--blue);
+			text-align: left;
+			letter-spacing: -1px;
+		}
+		&_text{
+			margin-top: 24px;
+			strong{
+				margin-top: 24px;
+				display: inline-block;
+			}
+		}
+	}
+    
+    @media (max-width: $m992) {
+		grid-template-columns: 1fr;
+		grid-column-gap: 0;
+	}
+}

@@ -1,0 +1,20 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+
+<div class="swiper-slide" data-person="{{spec.id}}">
+  <div class="swiper-slide_left">
+    <img src="{{spec.img}}" alt="">
+  </div>
+
+  <div class="swiper-slide_right">
+    <h3 class="swiper-slide_name">{{spec.name}}</h3>
+    <p class="swiper-slide_position">{{spec.position}}</p>
+    <p class="swiper-slide_description">{{spec.description}}</p>
+  </div>
+  
+  <a href="{{ spec.linkedin }}" class="person-linkedin"> 
+    <img class="swiper-slide_img" src="../images/icon-linkedin.svg" alt="Linkedin">
+  </a>
+</div>
+{% endmacro %}

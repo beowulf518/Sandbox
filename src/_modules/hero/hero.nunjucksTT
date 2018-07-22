@@ -1,0 +1,37 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="container">
+  <div class="row">
+    <div class="hero animate {{spec.class}}">
+      <header class="hero-left">
+        <h1 class="hero-left_title">{{ _.hero.title }}</h1>
+        <p class="hero-left_text">{{ _.hero.text }}</p>
+      </header>
+
+      <div class="hero-right">
+        <h2 class="hero-right_title">{{ _.hero_right.title }}</h2>
+        <p class="hero-right_text">{{ _.hero_right.text }}</p>
+        <a href="#" class="cta hero-right_cta ga-event" data-gacategory="Clicks" data-gaactions="Web - Home" data-galabel="Hero" >{{ _.hero_right.cta }}</a>
+        <div class="hero-right_discount">
+          {{ _.hero_right.discount }}
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div id="hero-countdown" class="hero-countdown">
+      <div id='hero-tiles' class="hero-tiles"></div>
+      <div class="hero-labels">
+        <li class="hero-listring">Days</li>
+        <li class="hero-listring">Hours</li>
+        <li class="hero-listring">Mins</li>
+        <li class="hero-listring">Secs</li>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}

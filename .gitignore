@@ -1,0 +1,7 @@
+node_modules
+*.log
+build/*
+!build/.gitkeep
+tmp
+.grunt
+.DS_Store

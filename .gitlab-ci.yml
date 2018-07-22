@@ -1,0 +1,44 @@
+before_script:
+  - mkdir -p ~/.ssh
+  - echo "$DOKKU_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - ssh-keyscan -H 'wip.aerolab.co' >> ~/.ssh/known_hosts
+
+stages:
+  - deploy
+
+deploy_master:
+  stage: deploy
+  only:
+    - master
+  environment:
+    name: staging
+    url: http://$CI_PROJECT_NAME.wip.aerolab.co
+  script:
+    - ssh dokku@wip.aerolab.co apps:create ${CI_PROJECT_NAME} 2> /dev/null || echo "App already exists"
+    - git push dokku@wip.aerolab.co:${CI_PROJECT_NAME} HEAD:refs/heads/master --force
+    - ssh dokku@wip.aerolab.co certs:add ${CI_PROJECT_NAME} /home/dokku/.https/server.crt /home/dokku/.https/server.key > /dev/null
+
+deploy_feature:
+  stage: deploy
+  except:
+    - master
+  environment:
+    name: review/$CI_BUILD_REF_NAME
+    url: http://$CI_PROJECT_NAME-$CI_BUILD_REF_NAME.wip.aerolab.co
+    on_stop: stop_feature_review
+  script:
+    - ssh dokku@wip.aerolab.co apps:create ${CI_PROJECT_NAME}-${CI_BUILD_REF_NAME} 2> /dev/null || echo "App already exists"
+    - git push dokku@wip.aerolab.co:${CI_PROJECT_NAME}-${CI_BUILD_REF_NAME} HEAD:refs/heads/master --force
+    - ssh dokku@wip.aerolab.co certs:add ${CI_PROJECT_NAME}-${CI_BUILD_REF_NAME} /home/dokku/.https/server.crt /home/dokku/.https/server.key > /dev/null
+
+stop_feature_review:
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - ssh dokku@wip.aerolab.co apps:destroy ${CI_PROJECT_NAME}-${CI_BUILD_REF_NAME} --force 2> /dev/null || echo "App already destroyed"
+  when: manual
+  environment:
+    name: review/$CI_BUILD_REF_NAME
+    action: stop
