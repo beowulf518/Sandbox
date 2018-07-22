@@ -127,7 +127,7 @@ $(() => {
 
 
  ///////Count down///////
-  var target_date = new Date('July 24, 2018 00:00:00').getTime();
+  var target_date = new Date('July 29, 2018 00:00:00').getTime();
   var current_date = new Date().getTime();
   console.log(target_date);
    // set the countdown date
@@ -137,7 +137,7 @@ $(() => {
 
   getCountdown();
 
-  var interval2 = setInterval(function () { getCountdown(); }, 1000000);
+  var interval2 = setInterval(function () { getCountdown(); }, 1000);
 
   function getCountdown(){
 

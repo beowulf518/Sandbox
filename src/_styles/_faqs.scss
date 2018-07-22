@@ -18,6 +18,9 @@
       background: #403e3c;
       padding-bottom: inherit;
       align-items: center;
+      .faqs-accordion-item {
+        max-height:100px;
+      }
     }
   }
 
@@ -73,11 +76,7 @@
         font-size: 18px;
        }
     }
-    @media(max-width:$m768){
-      .faqs-accordion-item {
-        max-height:77px;
-      }
-    }
+    
 
     .description {
       font-size: 16px;

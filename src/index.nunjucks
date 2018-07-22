@@ -71,7 +71,7 @@
   <div class="zone video animate">
     <div class="wrapper video-wrapper">
       <h2 class="video-title">{{ _.video.title }}</h2>
-      <video class="video-video" controls width="560" height="315" src="{{ _.video.src }}"></video>
+      <video class="video-video" controls width="560" height="315" src="{{ _.hero_video.video }}"></video>
       <a class="video-youtube" href="{{ _.video.youtube_src }}" target="_blank">{{ _.video.youtube_title }}</a>
     </div>
   </div>
@@ -105,9 +105,9 @@
   </div>  
 
   <div class="experience-zone">
-    <h2 class="experience-title animate">{{ _.experience.title }}</h2>
+    <h2 class="experience-zone-title animate">{{ _.experience.title }}</h2>
     {% for item in _.experience.items %}     
-          <div class="experience-item container animate">            
+          <div class="experience-zone-item container animate">            
               <img src="{{ item.image }}" alt="" class="{{item.class}}" />
               <div class="overlay experience-zone-hover">
                 <div class="experience-hover">
@@ -202,12 +202,11 @@
             {{_.gamemarket.market_main.first.title}}
           </p>
           <p class="market-item_two">
-            <span> <b>2018</b> =137.9Bn</span><br/>
-            <span> <b>2021</b> =180.1Bn</span><br/><br/>
+            <span> <b>{{_.gamemarket.market_main.first.year1}}</b>{{_.gamemarket.market_main.first.year1Value}}</span><br/>
+            <span> <b>{{_.gamemarket.market_main.first.year2}}</b> {{_.gamemarket.market_main.first.year2Value}}</span><br/><br/>
             <span> {{_.gamemarket.market_main.first.text}} </span><br/><br/>
-            <span> <b>VR In 2018</b> = $4.5 Bn</span><br/>
-            <span> <b>AR In 2018</b> = $3.2 Bn</span>
-
+            <span> <b>{{_.gamemarket.market_main.first.VRyear}}</b> {{_.gamemarket.market_main.first.VRvalue}}</span><br/>
+            <span> <b>{{_.gamemarket.market_main.first.ARyear}}</b> {{_.gamemarket.market_main.first.ARvalue}}</span>
           </p>
         </div>
         <div class="market_gird-item animate">
