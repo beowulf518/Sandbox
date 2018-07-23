@@ -19,9 +19,10 @@
   <div class="zone hero-zone">
 
     <div class="hero-video">
-      <video class="hero-video-core" id="hero-video-core" preload="auto" loop muted >
+      <video class="hero-video-core" id="hero-video-core" preload="auto" loop muted autoplay playsinline >
         <source src="{{_.hero_video.video}}" type='video/mp4' />
       </video>
+      <canvas class="canvas"></canvas>
       <div class="video-overlay"></div>
     </div>
 
@@ -71,7 +72,7 @@
   <div class="zone video animate">
     <div class="wrapper video-wrapper">
       <h2 class="video-title">{{ _.video.title }}</h2>
-      <video class="video-video" controls width="560" height="315" src="{{ _.hero_video.video }}"></video>
+      <video class="video-video" controls width="560" height="315" src="{{_.video.src}}"></video>
       <a class="video-youtube" href="{{ _.video.youtube_src }}" target="_blank">{{ _.video.youtube_title }}</a>
     </div>
   </div>

@@ -51,7 +51,7 @@
     <![endif]-->
 
     {% block content %}{% endblock %}
-
+    
     <script src="{{baseUrl}}scripts/main.js"></script>
     {% block scripts %}{% endblock %}
 
@@ -64,6 +64,8 @@
 
       ga('create', 'UA-22426140-21', 'auto');
       ga('send', 'pageview');
+
+
 
     </script>
     

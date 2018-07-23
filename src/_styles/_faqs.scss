@@ -35,9 +35,9 @@
 
     &-item {
       display: flex;
-      padding: 33px 0;
+      padding: 47px 0;
       border-bottom: 1px solid #d8d8d8;
-      max-height: 87px;
+      max-height: 117px;
       overflow: hidden;
       transition: max-height .5s;
 
@@ -45,7 +45,7 @@
         max-height: 300px;
 
         @media (max-width: $m768) {
-          max-height: 350px;
+          max-height: 600px;
         }
       }
 
@@ -71,7 +71,7 @@
       font-size: 25px;
       text-align: left;
       color: var(--gray);
-      padding-bottom: 20px;
+      padding-bottom: 50px;
       @media (max-width: $m768) {
         font-size: 18px;
        }

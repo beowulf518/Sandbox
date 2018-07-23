@@ -20,11 +20,13 @@ $(() => {
     var interval= setInterval(function () { 
         
         doALoadOfStuff();
-         videoplay.play();
+         //videoplay.play();
         //videoplay.play();
 
       }, 10);
 
+
+   
       
 
   var swiper1 = new Swiper('.swiper-container1', {
@@ -138,6 +140,8 @@ $(() => {
   getCountdown();
 
   var interval2 = setInterval(function () { getCountdown(); }, 1000);
+
+
 
   function getCountdown(){
 
@@ -300,14 +304,6 @@ $(() => {
       });
     }
   }
-
-
-
-
-   
-
-    
-  
 
 
 
