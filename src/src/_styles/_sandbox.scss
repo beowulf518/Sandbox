@@ -1,0 +1,74 @@
+
+.sandbox{
+    background-image:   url(../images/separator-top-white.svg),
+                        linear-gradient(300deg, var(--black2), var(--gray));
+    background-size:    100vw auto, cover;
+    background-position: center bottom -1px, top left;
+    background-repeat:   no-repeat, no-repeat;
+    color: var(--white);
+    padding-bottom: 412px;
+
+    &-token{
+        background-image:   url(../images/separator-bottom-black.svg),
+                            linear-gradient(#e9fdfc, #e9fdfc),
+                            linear-gradient(0deg, var(--black2) 80%, var(--gray));
+        background-size:     100vw auto, auto 220px, cover;
+        background-position: bottom center, bottom center, top left;
+        background-repeat:   no-repeat, no-repeat, no-repeat;
+        flex-direction: column;
+
+        @supports (-ms-ime-align: auto) {
+            background: red;
+            background-image:   linear-gradient(0deg, var(--black2) 80%, var(--gray));
+            background-size:    cover;
+            background-position: top left;
+        }
+    }
+
+    &-header{
+        text-align: center;
+
+        &_title{
+            margin-bottom: 16px;
+        }
+        &_text{
+            max-width: 624px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+        }
+        &_img{
+            max-width: 436px;
+            margin-bottom: 40px;
+        }
+    }
+    
+    @media (max-width: $m1200) {
+        padding-bottom: 312px;
+    }
+    
+    @media (max-width: $m992) {
+        &-token{
+            background-size: 100vw auto, auto 180px, cover;
+            padding-bottom: 200px;
+        }
+    }
+    
+    @media (max-width: $m768) {
+        padding-bottom: 100px;
+
+        &-token{
+            background-size: 100vw auto, auto 120px, cover;
+        }
+
+        &-header{
+            text-align: left;
+        }
+    }
+    
+    @media (max-width: $m480) {
+        &-token{
+            background-size: 100vw auto, auto 50px, cover;
+        }
+    }
+}

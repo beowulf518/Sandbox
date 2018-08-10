@@ -1,0 +1,51 @@
+// smtag styles
+
+.smTag{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 40px;
+
+    &-img{
+        width: 100px;
+        height: 100px;
+        background-color: var(--white);
+        padding: 12px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .key &{
+            background-color: var(--lightBlue2);
+            background-image: linear-gradient(315deg, var(--lightBlue1), var(--lightBlue2));
+        }
+
+        &_img{
+            width: 100%;
+            max-width: 73px;
+            // cada uno distinto
+        }
+    }
+
+    &-info{
+        text-align: left;
+
+        &_title{
+            text-align: left;
+            margin-bottom: 8px;
+
+            .key &{
+                color: var(--orangeDark);
+            }
+        }
+    }
+
+    @media (max-width: $m768) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        &-info_title{
+            text-transform: uppercase;
+        }
+    }
+}

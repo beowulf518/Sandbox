@@ -1,0 +1,98 @@
+// footer styles
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&-zone{
+		background-color: var(--black2);
+		padding-bottom: 80px;
+	}
+
+	&-logo{
+		max-width: 200px;
+	}
+
+	&-title{
+		color: var(--white);
+		margin-right: 48px;
+	}
+
+	&-list{
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+
+		&_item{
+			margin: 0 10px;
+
+			img{
+				max-width: 49px;
+			}
+		}
+		&_link{
+			max-width: 49px;
+		}
+	}
+
+	&-right{
+		display: flex;
+		align-items: center;
+		padding-right: 160px;
+		position: relative;
+		
+		&_img{
+			position: absolute;
+			max-width: 132px;
+			top: -120px;
+			right: 0;
+		}
+	}
+
+	@media (max-width: $m1200) {
+		&-logo{
+			max-width: 160px;
+		}
+		&-title{
+			margin-right: 16px;
+		}
+
+		&-right{
+			padding-right: 120px;
+
+			&_img{
+				max-width: 102px;
+			}
+		}
+	}
+
+	@media (max-width: $m992){
+		&-title{
+			display: none;
+		}
+	}
+
+	@media (max-width: $m768){
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+
+		&-right{
+			padding-right: 0;
+			padding-top: 40px;
+
+			&_img{
+				display: none;
+			}
+		}
+		&-list{
+			&_item{
+				flex-grow: 1;
+			}
+			&_link{
+				width: 24px;
+			}
+		}
+	}
+}

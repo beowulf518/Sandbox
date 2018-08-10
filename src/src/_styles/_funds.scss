@@ -1,0 +1,235 @@
+
+.funds{
+	&-title{
+		margin-bottom: 78px;
+	}
+	
+	&-one{
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 88px;
+
+		&_large{
+			margin-top: 120px;
+			padding-left: 0;
+
+			.funds-one_img{
+				width: 30vh;
+				height: 30vh;
+				min-width: 260px;
+				margin-right: 48px;
+				
+				&-text{
+					font-size: 23px;
+					max-width: 140px;
+				}
+			}
+		}
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&_text{
+			max-width: 385px;
+		}
+
+		&_img{
+			position: relative;
+			width: 55vh;
+			height: 55vh;
+			min-width: 340px;
+			max-width: 560px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&-img{
+				position: absolute;
+				width: 100%;
+			}
+			&-text{
+				position: relative;
+				text-align: center;
+				max-width: 200px;
+				line-height: 1;
+				font-size: 33px;
+  				font-weight: 600;
+			}
+		}
+	}
+
+	@media (max-width: $m1440) {
+		&-one{
+			padding-left: 0;
+			&_large{
+				.funds-one_img{
+					width: 35vh;
+					height: 35vh;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $m1200) {
+		&-one{
+			&_img{
+				width: 35vh;
+				height: 35vh;
+
+				&-text{
+					font-size: 23px;
+					max-width: 120px;
+				}
+			}
+
+			&_large{
+				flex-wrap: wrap;
+
+				.funds-one_text{
+					max-width: 70%;
+					margin: 0 auto 48px;
+					order: 3;
+				}
+				.funds-one_data{
+					order: 2;
+					margin-bottom: 72px;
+				}
+				.funds-one_img{
+					order: 1;
+					margin-bottom: 72px;
+				}
+			}
+		}
+	}
+
+    @media (max-width: $m992) {
+		&-one{
+			flex-direction: column;
+
+			&_img{
+				margin-bottom: 56px;
+				width: 438px;
+				height: 438px;
+				min-width: auto;
+			}
+
+			&_large{
+				.funds-one_data{
+					margin-bottom: 72px;
+				}
+				.funds-one_img{
+					width: 438px;
+					height: 438px;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+    
+    @media (max-width: $m768) {
+		&-title{
+			margin-bottom: 132px;
+			text-align: center;
+			transform: translateY(-120px);
+		}
+		&-one{
+			margin-left: auto;
+			margin-right: auto;
+			transform: translateY(-120px);
+
+			max-width: 100vw;
+			overflow: hidden;
+
+			&_data{
+				padding-left: 56px;
+			}
+
+			&_img{
+				width: 100%;
+				max-width: 300px;
+				height: auto;
+
+				&-text{
+					position: absolute;
+				}
+				&-img{
+					position: relative;
+					max-width: 280px;
+				}
+			}
+
+			&_large{
+				.funds-one_data{
+					margin-bottom: 72px;
+				}
+				.funds-one_img{
+					width: 100%;
+					max-width: 300px;
+					height: auto;
+
+					&-img{
+						max-width: 280px;
+					}
+				}
+				.funds-one_text{
+					max-width: 100%;
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.data{
+	&-item{
+		list-style-type: none;
+		position: relative;
+		margin-bottom: 32px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		&_ref{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: var(--fill);
+			position: absolute;
+			left: -56px;
+
+			&-border{
+				border: 1px solid var(--grayLight);
+			}
+		}
+		&_text{
+			font-size: 23px;
+			font-weight: 800;
+			letter-spacing: -0.8px;
+			max-width: 334px;
+			margin-bottom: 8px;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+		&_small{
+			display: block;
+			font-weight: 400;
+			font-size: 18px;
+		}
+	}
+    
+    @media (max-width: $m768) {
+		&-item{
+			&_ref{
+				width: 30px;
+				height: 30px;
+				top: 3px;
+			}
+			&_text{
+				font-size: 16px;
+			}
+		}
+	}
+}

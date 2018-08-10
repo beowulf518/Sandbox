@@ -1,0 +1,263 @@
+
+.roadmap{
+	text-align: center;
+
+	&-zone{
+		background-image:    url(../images/separator-top-white.svg),
+						     url(../images/illustration3.jpg);
+		background-repeat:   no-repeat, no-repeat;
+		background-size:     auto 400px, cover;
+		background-position: center bottom -120px, center center;
+
+		height: 60vh;
+		min-height: 500px;
+		max-height: 600px;
+		text-align: center;
+		margin-bottom: 48px;
+
+		&_img{
+			width: 100%;
+			max-width: 450px;
+			margin-bottom: 140px;
+			position: relative;
+			top: -30px;
+		}
+
+		@media (min-width: $m1600) {
+			background-size:     auto 430px, cover;
+			background-position: center bottom -230px, center center;
+
+			&_img{
+				top: 20px;
+			}
+		}
+		@media (max-width: $m768) {
+			&_img{
+				max-width: 320px;
+			}
+			&_title{
+				text-align: center;
+			}
+		}
+	}
+
+	&-year{
+		background-color: var(--orange);
+		display: inline-block;
+		padding: 12px 24px;
+		border-radius: 50px;
+		margin-right: auto;
+		margin-left: auto;
+
+		font-size: 23px;
+		font-weight: 600;
+		color: var(--white);
+	}
+
+
+	&-row{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	
+		&_card{
+			padding: 8px 12px 0;
+			margin: 48px 60px;
+			position: relative;
+
+			&-title{
+				text-align: left;
+				font-size: 24px;
+				letter-spacing: -0.8px;
+				margin-bottom: 8px;
+
+				max-width: 318px;
+			}
+
+			p{
+				max-width: 404px;
+			}
+	
+			&::before{
+				content: '';
+				width: 16px;
+				height: 16px;
+				display: block;
+				position: absolute;
+				border-radius: 50%;
+				top: 12px;
+		
+				border: 2px solid var(--gray);
+				background-color: var(--gray);
+			}
+			&::after{
+				content: url(../images/roadmap-left.svg);
+				width: 60px;
+				height: 6px;
+				display: block;
+				position: absolute;
+				top: 8px;
+				right: -60px;
+			}
+		}
+	
+		&_left{
+			> div {
+				text-align: right;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+
+				.roadmap-row_card-title{
+					text-align: right;
+				}
+			}
+			> div::before{
+				right: -69px;
+			}
+		}
+	
+		&_right{
+			border-left: 2px solid var(--gray);
+
+			p{
+				text-align: left;
+			}
+		
+			> div::before{
+				left: -69px;
+			}
+			> div::after{
+				left: -60px;
+				transform: rotateY(-180deg);
+			}
+		}
+	}
+
+	&-push_down{
+		padding-top: 88px;
+	}
+	&-last_item{
+		padding-bottom: 80px;
+	}
+
+	&-zone_column{
+		flex-direction: column;
+	}
+	&-zone_last{
+		background-image: url(../images/illustration-footer.png);
+		background-position: center bottom;
+		background-size: auto 170px;
+		background-repeat: repeat-x;
+
+		height: 180px;
+		width: 100%;
+		position: relative;
+		top: -20px;
+	}
+    
+    @media (max-width: $m992) {
+		&-zone{
+			height: 40vh;
+			min-height: 380px;
+			max-height: 480px;
+			background-size: auto 300px, cover;
+
+			&_img{
+				margin-bottom: 32px;
+			}
+		}
+
+
+		&-row{
+			&_left{
+				.roadmap-row_card{
+					margin-left: 0;
+				}
+			}
+			&_right{
+				.roadmap-row_card{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	@media (max-width: $m768) {
+		border-left: 2px solid var(--gray);
+		margin-left: 24px;
+		padding-bottom: 56px;
+
+		&-year{
+			text-align: center;
+
+			&:first-child{
+				box-shadow: -150px 18px 0 20px  var(--white);
+			}
+		}
+		
+		&-row{
+			text-align: left;
+			grid-template-columns: 1fr;
+			align-items: flex-start;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 24px;
+
+			&_card{
+				padding: 0;
+				padding-left: 10px;
+				margin: 0;
+
+				&-title{
+					font-size: 20px;
+				}
+				p{
+					font-size: 15px;
+				}
+			}
+
+			&_right{
+				border-left: none;
+				width: 100%;
+			}
+
+			&_left, &_right{
+				border-right: none;
+				width: 100%;
+
+				> div{
+					text-align: left;
+					align-items: flex-start;
+
+					.roadmap-row_card-title{
+						text-align: left;
+					}
+
+					&::before{
+						left: -33px;
+						top: 6px;
+					}
+					&::after{
+						content: url(../images/roadmap-right.svg);
+						left: -32px;
+						top: 2px;
+						width: 33px;
+						transform: none;
+					}
+				}
+			}
+		}
+
+		&-last_item{
+			padding-bottom: 0;
+		}
+
+		&-zone_title{
+			text-transform: uppercase;
+		}
+		&-zone_last{
+			background-position: 90px center;
+			top: -60px;
+		}
+	}
+}
