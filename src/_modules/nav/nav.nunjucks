@@ -14,46 +14,22 @@
       <path d="M0 0h24v24H0z" fill="none"/>
     </svg>
   </button>
-  <ul class="nav-list">
-    <li><a class="cloak nav-list_skip" href="#content">Skip navigation</a></li>
-    {% for item in _.header.nav %}
-      <li class="{{ item.list_class }}"><a class="{{ item.link_class }}" href="{{ item.url }}">{{ item.name }}</a></li>
-    {% endfor %}
-    
-    <li class="nav-list_item nav-list_item-social"><a class="nav-list_link nav-list_social nav-list_social-first ga-event" href="https://twitter.com/Pixowl" data-gacategory="Community" data-gaactions="Twitter">
-      <img src="../images/icon-twitter.svg" alt="Twitter">
-    </a></li>
-    <li class="nav-list_item nav-list_item-social"><a class="nav-list_link nav-list_social ga-event" href="https://www.facebook.com/thesandboxgame" data-gacategory="Community" data-gaactions="Facebook">
-      <img src="../images/icon-facebook.svg" alt="Facebook">
-    </a></li>
-    <li class="nav-list_item nav-list_item-social ga-event"><a class="nav-list_link nav-list_social ga-event" href="https://medium.com/sandbox-game" data-gacategory="Community" data-gaactions="Medium">
-      <img src="../images/icon-medium.svg" alt="Medium">
-    </a></li>
-    <li class="nav-list_item nav-list_item-social"><a class="nav-list_link nav-list_social nav-list_social-last ga-event" href="http://www.pixowl.com" data-gacategory="Community" data-gaactions="Pixowl official website">
-      <img src="../images/icon-pixowl.png" alt="Pixowl official website">
-    </a></li>
-  
-    <li class="nav-list_item nav-list_item-cta"><a class="nav-list_link nav-list_cta ga-event" data-gacategory="Contributor" data-gaactions="Open Signup" href="#" > {{ _.header.cta }}</a></li>
-    
-    <li class="nav-social">
-      <ul class="nav-social_list">
-        <li class="nav-list_item nav-social_item"><a class="nav-list_link nav-list_social nav-list_social-first ga-event" href="http://t.me/sandboxgame" data-gacategory="Community" data-gaactions="Telegram">
-          <img src="../images/icon2-telegram.svg" alt="Telegram">
-        </a></li>
-        <li class="nav-list_item nav-social_item"><a class="nav-list_link nav-list_social nav-list_social-first ga-event" href="https://twitter.com/Pixowl" data-gacategory="Community" data-gaactions="Twitter">
-          <img src="../images/icon2-twitter.svg" alt="Twitter">
-        </a></li>
-        <li class="nav-list_item nav-social_item"><a class="nav-list_link nav-list_social ga-event" href="https://www.facebook.com/thesandboxgame" data-gacategory="Community" data-gaactions="Facebook">
-          <img src="../images/icon2-facebook.svg" alt="Facebook">
-        </a></li>
-        <li class="nav-list_item nav-social_item"><a class="nav-list_link nav-list_social ga-event" href="https://medium.com/sandbox-game" data-gacategory="Community" data-gaactions="Medium">
-          <img src="../images/icon2-medium.svg" alt="Medium">
-        </a></li>
-        <li class="nav-list_item nav-social_item"><a class="nav-list_link nav-list_social nav-list_social-last ga-event" href="http://www.pixowl.com" data-gacategory="Community" data-gaactions="Pixowl official website">
-          <img src="../images/icon2-pixowl.png" alt="Pixowl official website">
-        </a></li>
-      </ul>
-    </li>
+  <ul class="nav-list">  
+    {% for item in _.header.nav2 %}
+      <li class="{{ item.list_class }} {{ item.link_class }}"> <a class="nav-list_link"  href="{{ item.url }}">{{ item.name }}</a> 
+        {% if(item.subMenus) %}
+        <div>
+          <ul class="nav-list-sub">
+            {% for subitem in item.subMenus %}
+              <li class="{{ subitem.sublist_class}}">
+                <a class="{{ subitem.sublink_class }}" href="{{ subitem.url }}" >{{ subitem.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </li>
+    {% endfor %}  
   </ul>
 </nav>
 {% endmacro %}

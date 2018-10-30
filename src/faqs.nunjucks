@@ -1,12 +1,7 @@
 {% extends '_layouts/base.nunjucks' %}
-
-{% import '_modules/link/link.nunjucks' as link %}
 {% import '_modules/header/header.nunjucks' as header %}
-{% import '_modules/hero/hero.nunjucks' as hero %}
-{% import '_modules/smtag/smtag.nunjucks' as smTag %}
-{% import '_modules/lgtag/lgtag.nunjucks' as lgTag %}
-{% import '_modules/person/person.nunjucks' as person %}
-{% import '_modules/team-mobile/team-mobile.nunjucks' as teamMobile %}
+
+
 {% import '_modules/footer/footer.nunjucks' as footer %}
 
 {% block content %}

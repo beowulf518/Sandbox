@@ -1,0 +1,56 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="roadmap animate {{spec.class}}">
+    <div class="roadmap-top-bg"></div>
+    <div class="roadmap-team">
+        <p class="roadmap-team-title"> {{ _.amazing_team.title }} </p>
+        <div class="roadmap-team-avatar">
+            {% for item in _.amazing_team.items %}
+                <div class="team-item">
+                    <div class="team-avatar">
+                        <img class="team-avatar-img" src="{{item.image}}" />
+                    </div>
+                    <p class="team-name"> {{ item.name }} </p>
+                    <p class="team-position"> {{ item.position }} </p>
+                </div>
+            {% endfor %}
+        </div>
+        <p class="roadmap-team-description"> {{ _.amazing_team.text }} </p>
+        <button class="roadmap-team-btn"> {{ _.amazing_team.text_btn  }} </button>
+    </div>
+
+    <div class="roadmap-map">
+    
+        {% for item in _.roadmap.items %}
+            <div class="item-year">
+                <p>{{ item.year }}</p>
+            </div>
+            {% if (item.position == "up") %}
+                <div class="roadmap-map-up">
+                    <img class="roadmap-up" src="../images/roadmap-up.png" />
+                    <div class="roadmap-map-up-txt">
+                        <p class=""> {{item.title}} </p>
+                    </div>
+                </div>
+            {% else %}
+                <div class="roadmap-map-down">
+                    <img class="roadmap-down" src="../images/roadmap-down.png" />
+                    <div class="roadmap-map-down-txt">
+                        <p class=""> {{item.title}} </p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="roadmap-btngroup">
+        <button class="roadmap-btngroup-investor"> INVESTORS</button>
+        <button class="roadmap-btngroup-whitepaper"> WHITEPAPER </button>
+
+    </div>
+    <div class="roadmap-bottom-bg"></div>
+</div>
+
+{% endmacro %}

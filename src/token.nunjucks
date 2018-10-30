@@ -1,0 +1,122 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import '_modules/link/link.nunjucks' as link %}
+{% import '_modules/header/header.nunjucks' as header %}
+
+
+{% import '_modules/footer/footer.nunjucks' as footer %}
+
+
+{% block content %}
+<header class="zone zone-header">
+  {{ header.content() }}
+</header>
+<main id="content">
+    <div  class="sandtoken-bg">
+        <img  src="../images/token_middle.png" />
+    </div>
+    
+    <div class="sandtoken-zone">
+        <div class="sandtoken">
+            <div class="sandtoken-top-bg"></div>
+            <h2 class="sandtoken-title">{{ _.sandtoken.title }}</h2>
+            <p class="sandtoken-description"> {{ _.sandtoken.description }} </p>
+            <div class="sandtoken-items">
+                {% for item in _.sandtoken.items %}
+                    <div class="item">
+                        <div class="item-avatar">
+                            <img class="item-img" src="{{item.image}}" />
+                        </div>
+                        <p class="item-title">{{ item.title }}</p>
+                        <p class="item-description"> {{item.subtitle}} </p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="sandtoken-economy">
+                <p class="sandtoken-economy-title"> {{_.sandtoken.eco_title}} <p>
+                <p class="sandtoken-economy-description"> {{_.sandtoken.eco_description}} <p>
+            </div>
+            <div class="sandtoken-bottom-bg"></div>
+        </div>
+    </div>
+
+    <div class="pricegrowth-zone">
+        <div class="pricegrowth">
+            <h2 class="pricegrowth-title">{{ _.tokenprice.title }}<h2>
+            <div class="pricegrowth-graph1">
+                <div class="graph1-left graph1-small graph1-bg">
+                    <img class="asset" src="{{_.tokenprice.items[0].asset_image}}" />
+                    <p class="title" > {{ _.tokenprice.items[0].title }} </p>
+                    <p class="text1">  {{ _.tokenprice.items[0].content1 }}</p>
+                    <hr>
+                    <p class="text2"> {{ _.tokenprice.items[0].content2 }}</p>
+                    <img class="left-arrow arrow" src=" {{_.tokenprice.items[0].arrow_image}}" />
+                </div>
+                <div class="graph1-connection">
+                    <img src="../images/sand-connection.png" />
+                </div>
+                <div class="graph1-center graph1-big graph1-bg">
+                    <img class="asset" src="{{_.tokenprice.items[1].asset_image}}" />
+                    <p class="title" > {{ _.tokenprice.items[1].title }} </p>
+                    <p class="text1">  {{ _.tokenprice.items[1].content1 }}</p>
+                    <hr>
+                    <p class="text2"> {{ _.tokenprice.items[1].content2 }}</p>
+                    <img class="down-arrow arrow" src="{{_.tokenprice.items[1].arrow_image}}" />
+                </div>
+                <div class="graph1-connection">
+                    <img src="../images/sand-connection.png" />
+                </div>
+                <div class="graph1-right graph1-small graph1-bg">
+                    <img class="asset" src="{{_.tokenprice.items[2].asset_image}}" />
+                    <p class="title" > {{ _.tokenprice.items[2].title }} </p>
+                    <p class="text1">  {{ _.tokenprice.items[2].content1 }}</p>
+                    <hr>
+                    <p class="text2"> {{ _.tokenprice.items[2].content2 }}</p>
+                    <img class="right-arrow arrow" src="{{_.tokenprice.items[2].arrow_image}}" />
+                </div>
+            </div>
+
+            <div class="pricegrowth-graph2">
+                <div class="graph2-left graph2-bg">
+                    <img class="coin" src="{{_.tokenprice.coin_image}}" />
+                    <p class="graph2-coin-content">{{_.tokenprice.coin_content1}}</p>
+                </div>
+                <div class="graph2-connection">
+                    <img src="../images/plus.png" />
+                    
+                </div>
+                <div class="graph2-right graph2-bg">
+                    <img class="coin" src="{{_.tokenprice.coin_image}}" />
+                    <p class="graph2-coin-content">{{_.tokenprice.coin_content2}}</p>
+                </div>
+            </div>
+            <div class="pricegrowth-after"></div>
+        </div>
+    </div>
+
+
+    <div class="tokeneco-zone">
+        <div class="tokeneco">
+            <h2 class="tokeneco-title title">{{ _.token_first_graph.title }}</h2>
+            <div id="chart1" class="funds-one-first animate"></div>
+            <p class="tokeneco-graph-description"> {{_.token_first_graph.text}} </p>
+            <h2 class="tokeneco-proceeds title"> {{_.use_proceeds.title}} </h2>
+            <div class="tokeneco-proceeds-items">
+                {% for item in _.use_proceeds.items %}
+                    <div class="item">
+                        <div class="item-cicrle">
+                                <p> {{item.percent}} </p>
+                        </div>
+                        <p class="item-description"> {{item.title}} </p>
+                    </div>
+                {% endfor %}
+            </div>   
+        </div>
+    </div>
+
+    <div class="zone footer-zone">
+        {{ footer.content() }}
+    </div>
+</main>
+{% endblock %}

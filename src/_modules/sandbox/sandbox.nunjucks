@@ -1,0 +1,37 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="sandbox {{spec.class}}">
+    <div class="sandbox-content">
+        <p class="sandbox-content-title"> {{_.sandbox.title}} </p>
+        <p class="sandbox-content-description"> {{_.sandbox.text}} </p>
+
+        <div class="sandbox-content-subscribe">
+            <input type="text" placeholder="Please enter your e-mail">
+            <button onclick="alert('hi')"> Subscribe now </button>
+        </div>
+
+        <div class="sandbox-content-sub">
+            {% for item in _.sandbox.items %}
+                <div class="item">
+                    <div><img class="item-img" src="{{item.image}}"></div>
+                    <div>
+                        <p class="item-title">{{item.title}}</p>
+                        <p class="item-text">{{item.text}}</p>
+                        <button> {{item.button_text}}</button>
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="sandbox-bottom-bg"></div>
+  
+  
+  
+</div>
+
+{% endmacro %}

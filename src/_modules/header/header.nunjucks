@@ -6,9 +6,13 @@
 {% import '_modules/nav/nav.nunjucks' as nav %}
 
 <div class="header {{spec.class}}">
-<a href="http://www.sandbox.game/">
-  <img src="../images/logo.svg" alt="" class="header-img">
- </a>
+  <a href="index.html">
+    <img src="../images/logo.svg" alt="" class="header-img">
+  </a>
   {{ nav.content() }}
+
+  <div class="header-login">
+    <p>LOGIN</p>
+  </div>
 </div>
 {% endmacro %}

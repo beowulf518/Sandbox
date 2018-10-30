@@ -1,0 +1,67 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import '_modules/link/link.nunjucks' as link %}
+{% import '_modules/header/header.nunjucks' as header %}
+
+
+{% import '_modules/footer/footer.nunjucks' as footer %}
+
+
+{% block content %}
+<header class="zone zone-header">
+  {{ header.content() }}
+</header>
+<main id="content">
+   
+
+    <div class="banner banner-zone">
+        <div class="banner">
+            <img class="banner-main" src="{{_.banner.bg_img}}" />
+            <div class="banner-title" >
+                {% for item in _.banner.items %}
+                    <h2> {{item.title}} </h2>
+                {% endfor %}
+            </div>
+            <p class="banner-subtitle"> {{ _.banner.subtitle }} </p>
+        </div>
+    </div>
+    
+    <div class="editor-content">
+        <div class="editor-wrapper">
+            <div class="editor-content-feature">
+                <p class="feature-title title">{{_.feature.title}}</p>
+                <div class="feature-content">
+                    {% for item in _.feature.items %}
+                        <div class="feature-item">
+                            <img src="{{item.image}}" />
+                            <div>
+                                <p class="feature-item-title card-title"> {{item.title}} </p>
+                                <p class="feature-item-content card-content"> {{item.content}} </p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="editor-content-artists">
+                <p class="artists-title title">{{_.artists.title}}</p>
+                <div class="artists-content">
+                    {% for item in _.artists.items %}
+                        <div class="artists-item">
+                            <img src="{{item.image}}" />
+                            <div>
+                                <p class="artists-item-title card-title"> {{item.title}} </p>
+                                <p class="artists-item-owner card-content"> {{item.owner}} </p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zone footer-zone">
+        {{ footer.content() }}
+    </div>
+</main>
+{% endblock %}

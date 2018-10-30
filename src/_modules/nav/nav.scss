@@ -1,102 +1,113 @@
 // nav styles
 
 .nav{
+	
 	&-button{
 		position: absolute;
 		z-index: 1;
-		top: 24px;
+		top: 14px;
 		right: 56px;
 		background: none;
 		border: none;
 		cursor: pointer;
 		display: none;
+
 	}
+	
+	padding-left:20px;
+	
 	&-list{
+		
 		list-style: none;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-start;
 		text-align: center;
+		height: 100%;
+		
 
 		&_item{
-			flex-grow: 1;
+			
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
+			justify-content: space-around;
+			cursor: pointer;
+			flex-direction: column;
+			padding-left:15px;
+			padding-right:15px;
+
+				a{
+					line-height: 53px;
+				}
+			
 		}
+		&_item:hover{
+			background-color: #424242
+		}
+
+		&_inventors:hover{
+			
+			.nav-list-sub{
+				display: block;
+				background-color: var(--black3);
+				&_item{
+					padding-left:20px;
+					padding-right:20px;
+					text-align: start;
+				}
+				margin-left:-15px;
+			}
+		}
+
+		&_editor:hover{
+			
+			.nav-list-sub{
+				display: block;
+				background-color: var(--black3);
+				&_item{
+					padding-left:20px;
+					padding-right:20px;
+					text-align: start;
+				}
+				margin-left:-15px;
+			}
+		}
+
+
 		&_link{
+			line-height: 60px;
 			color: var(--white);
-			padding: 25px;
 			display: block;
-		}
-		&_link_china{
-			color: var(--white);
-			padding: 25px;
-			display: block;
-		}
-		&_link_japan{
-			color: var(--white);
-			padding: 25px;
-			display: block;
-		}
-		
-		&_link_china:before{
-			color: var(--white);
-			padding-right: 5px;
-			content:url('../images/chinaflag.png');
-		}
-
-		&_link_japan:before{
-			color: var(--white);
-			padding-right: 5px;
-			content:url('../images/japanflag.png');
-		}
-
-
-		&_social{
-			padding-left: 4px;
-			padding-right: 4px;
+			color: #ffffff;
+			font-family: 'Montserrat';
+			font-size: 16px;
+			font-weight: 600;
 			
-			img{
-				max-width: 40px;
-			}
-			&-last{
-				padding-right: 0px;
-			}
 		}
-		
-		// Skip navigation on focus
-		&_skip:focus{
-			background-color: var(--orange);
+
+		&-sub{
+			list-style: none;
+			color: white;
 			position: absolute;
-			clip: auto;
-			top: 0;
-			left: 0;
-			color: var(--black);
-			width: 200px;
-			height: 48px;
-			line-height: 48px;
-		}
+			display: none;
 
-		&_cta{
-			padding-top: 11px;
-			padding-bottom: 10px;
-			padding-left: 7px;
-			padding-right: 7px;
-			
-			color: var(--black);
-			border-radius: 5px;
-			background-color: #bce7f8;
-			background-image: linear-gradient(290deg, #94f0fe, #18b3f5);
-			width:0px;
-			transform: scaleX(0);
-			transform-origin: right center;
-			opacity: 0;
+			&_item{
+				font-family: 'Montserrat';
+				font-size: 16px;
+				font-weight: 600;
+				color: white;
 
-			&:hover{
-				background-image: linear-gradient(290deg, rgba(#94f0fe, 0), rgba(#18b3f5, 0));
+				a{
+					color: white;
+
+				}
 			}
-
-			transition: transform 0.4s, opacity 0.3s;
+			&_item:hover{
+				background-color: #424242;
+			}
 		}
+
+
+
 		@media (max-width: $m1440) {
 			&_link{
 				padding-left: 20px;
@@ -121,10 +132,7 @@
 			}
 		}
 	}
-	&-social{
-		display: none;
-		list-style-type: none;
-	}
+	
 
 	@media (max-width: $m1200) {
 		width: 100%;
@@ -231,15 +239,6 @@
 	}
 }
 
-.fixed-cta{
-	.nav-list_cta{
-		opacity: 1;
-		width:100%;
-		margin-left:15px;
-		margin-right:20px;
-		transform: scaleX(1);
-	}
-}
 
 // Mobile menu
 .nav-list_show{

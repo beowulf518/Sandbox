@@ -1,0 +1,23 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="partner animate {{spec.class}}">
+    <div class="partner-top-bg"></div>
+    <p class="partner-title"> {{ _.partners.title }}<p>
+    <div class="partner-one">
+        {% for item in _.partners.items1 %}
+            <img src="{{item.image}}" />
+        {% endfor %}
+    </div>
+    <div class="partner-two">
+        {% for item in _.partners.items2 %}
+            <img src="{{item.image}}" />
+        {% endfor %}
+    </div>
+    <div class="partner-bottom-bg"></div>
+  
+</div>
+
+{% endmacro %}

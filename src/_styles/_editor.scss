@@ -1,0 +1,169 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &-zone{
+        margin-top: 53px;
+        background-color: #0e0e0e;
+    }
+
+    &-main{
+        margin-top: 20px;
+    }
+    &-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            //background-image: linear-gradient(to top, #fe6920 0%, #ff9626 100%);
+            background-clip: text;
+            background: linear-gradient(to top, #fe6920 0%, #ff9626 100%);
+            font-family: "Montserrat";
+            color: #505052;
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 71.71px;
+            text-transform: uppercase;
+            padding-right: 20px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }  
+    }
+
+    &-subtitle{
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 56px;
+        margin-top: 5px;
+    }
+}
+
+
+.editor-content {
+    background-color: #fff;
+    padding-top: 61px;
+    padding-bottom: 126px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    .editor-wrapper{
+        max-width: 1320px;
+        
+        margin: auto;
+    }
+
+    .card-title{
+        color: #505052;
+        font-family: "Montserrat";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        
+    }
+    .card-content{
+        color: #505052;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 13px;
+    }
+
+    &-feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .feature-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 30px;
+            
+            .feature-item{
+                width: 420px;
+                height: 390px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                margin-left:10px;
+                margin-right:10px;
+                margin-bottom: 30px;
+                
+                &>div {
+                    padding: 19px;
+                }
+                img{
+                   border-radius: 5px 5px 0px 0px;
+                }
+            
+            }
+        }
+
+    }
+
+    &-artists{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+        .artists-content{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 30px;
+
+            .artists-item{
+                width: 310px;
+                height: 390px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                background-color: #f9f9f9;
+                margin-left:10px;
+                margin-right:10px;
+                margin-bottom: 20px;
+                
+                &>div {
+                    padding: 19px;
+                }
+
+                img{
+                   border-radius: 5px 5px 0px 0px;
+                }
+            
+            }
+        }
+    }
+
+    .title{
+        color: #fe6b20;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+        text-align: start;
+        padding-left: 10px;
+    }
+
+    @media (max-width: 1400px) {
+        .artists-content{
+            justify-content: center;
+        }
+        .feature-content{
+            justify-content: center;
+        }
+    }   
+}

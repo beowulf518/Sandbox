@@ -1,0 +1,40 @@
+{% macro content(spec) %}
+
+{% set spec = spec or {} %}
+{% set _class = spec.class or '' %}
+
+<div class="innovation animate {{spec.class}}">
+    <div class="innovation-top-bg"></div>
+    <div class="innovation-content" >
+        <div class="innovation-experience">
+            {% for item in _.experience.items %}
+                <div class="innovation-experience-item"> <img src='{{ item.image}}'></div>
+            {% endfor %}
+        </div>
+
+        <div class="innovation-section">
+            
+            <h2 class="innovation-section-title">{{ _.advancements.title }}</h2>
+            <div class="innovation-section-items">
+                {% for item in _.advancements.items %}
+                    
+                    <div class="innovation-section-item" >
+                        <div class="item-img">
+                            <img src="{{item.image}}" >
+                        </div>
+                        <p class="item-title"> {{item.title}} </p>
+                        <p class="item-text"> {{item.text}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="innovation-game">
+            <p class="innovation-game-title">Want to know more?</p>
+            <button class="innovation-game-btn"> THE GAME </button>
+        </div>
+    </div>
+    <div class="innovation-bottom-bg"></div>
+</div>
+
+{% endmacro %}

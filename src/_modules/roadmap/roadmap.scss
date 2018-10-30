@@ -1,0 +1,241 @@
+.roadmap{
+    max-width: 1575px;
+    background-color: #292929;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-zone{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 550px;
+        margin-bottom: 200px;
+        position: relative;
+
+    }
+
+    &-top-bg{
+        width: 100%;
+        max-width: 1575px;
+        height: 100px;
+        content: " ";
+        position: absolute;
+        background-image: url("../images/top-trangle-black.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 100px, cover;
+        margin: auto;
+        top: -100px;
+        z-index: -2;
+    }
+
+    &-bottom-bg{
+        width: 100%;
+        max-width: 1575px;
+        height: 100px;
+        content: " ";
+        position: absolute;
+        background-image: url("../images/bottom-trangle-black.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 100px, cover;
+        margin: auto;
+        bottom: -100px;
+        z-index: -2;
+    }
+
+    &-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        margin-top: -30px;
+        &-title{
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-size: 55px;
+            font-weight: 700;
+            line-height: 55px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &-avatar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 16px;
+            .team-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .team-avatar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 153px;
+                    height: 153px;
+                    border: solid 4px #ffffff;
+                    border-radius: 50%;
+                    margin: 8px;
+                    
+    
+                    img{
+                        width: 87%;
+                        height: 87%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        filter: grayscale(1);
+                        background-color: var(--gray);
+                        
+                    }
+                }
+
+                p{
+                    color: #ffffff;
+                    font-family: "DIN";
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+            
+
+            
+        }
+
+        &-description{
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 60%;
+            margin-top: 36px;
+        }
+
+        &-btn{
+            margin-top: 28px;
+            color: #292929;
+            font-family: "Montserrat";
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 23px;
+            text-transform: uppercase;
+            padding: 21px 25px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+        }
+    }
+
+
+    &-map{
+        display: flex;
+        justify-content: center;
+        
+        position: relative;
+        margin-top: 330px;
+        margin-left:-150px;
+        .item-year{
+            width: 95px;
+            height: 37px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            p{
+                color: #292929;
+                font-family: "Montserrat";
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 26.27px;
+                text-transform: uppercase;
+                text-align: center;
+                align-content: center;
+                margin: auto;
+            }
+        }
+
+        &-up{
+            margin-top: -105px;
+            &-txt{
+                margin-left:15px;
+                bottom:250px;
+                display: flex;
+                width:200px;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: absolute;
+                p{
+                    
+                    color: #ffffff;
+                    font-family: "Montserrat";
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 15px;
+                }     
+            }
+        }
+        &-down{
+            margin-top: 15px;
+
+            &-txt{
+                margin-left:15px;
+                position: absolute;
+                display: flex;
+                width:200px;
+                flex-direction: column;
+                justify-content: flex-end;
+                p{
+                    color: #ffffff;
+                    font-family: "Montserrat";
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 1550px) {
+       &-map{
+            flex-direction: column;
+       }   
+        
+    }
+    &-btngroup{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        flex-wrap: wrap;
+        button{
+            margin-top: 20px;
+            width:368px;
+            color: #292929;
+            font-family: "Montserrat";
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 23px;
+            text-transform: uppercase;
+            padding: 25px;
+            border-radius: 10px;
+            border:none;
+            outline: none;
+            margin-left:10px;
+            margin-right:10px;
+        }
+    }
+}

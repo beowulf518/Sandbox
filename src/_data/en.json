@@ -43,7 +43,7 @@
 			{
 				"name":"twitter:title",
 				"content": "A Decentralized Gaming Ecosystem Made By Players."
-	},
+			},
 			{
 				"name":"twitter:description",
 				"content": "The Sandbox is a decentralized community-driven gaming ecosystem for creators to monetize voxel assets and gaming experiences in the blockchain!"
@@ -70,462 +70,423 @@
 	},
 
 	"header": {
-		"nav_list_skip": "Skip navigation",
-		"nav": [
+		
+		"nav2":[
 			{
-				"name": "Chinese",
+				"name": "NEWS",
 				"list_class": "nav-list_item",
-				"link_class": "nav-list_link_china",
-				"url": "#",
-				"image":"../images/chinaflag.png"
+				"link_class": "nav-list_news",
+				"url": "https://medium.com/sandbox-game"
 			},
 			{
-				"name": "Japanese",
+				"name": "CREATE",
 				"list_class": "nav-list_item",
-				"link_class": "nav-list_link_japan",
-				"url": "#",
-				"image":"../images/japanflag.png"
+				"link_class": "nav-list_create",
+				"url": "https://artists.sandbox.game/"
 			},
 			{
-				"name": "Whitepaper",
+				"name": "MARKETPLACE",
 				"list_class": "nav-list_item",
-				"link_class": "nav-list_link",
-				"url": "http://www.sandbox.game/download/sandbox-whitepaper.pdf"
+				"link_class": "nav-list_marketplace",
+				"url": "http://marketplace.sandbox.game:8080"
 			},
 			{
-				"name": "FAQs",
+				"name": "EDITOR",
 				"list_class": "nav-list_item",
-				"link_class": "nav-list_link",
-				"url": "faqs.html"
+				"link_class": "nav-list_editor",
+				"url": "editor.html",
+				"subMenus":[
+					{
+						"name": "Animation",
+						"sublist_class": "nav-list-sub_item",
+						"sublink_class": "nav-list-sub_link",
+						"url": 	"animation.html"
+					},
+					{
+						"name": "Modeling",
+						"sublist_class": "nav-list-sub_item",
+						"sublink_class": "nav-list-sub_link",
+						"url": 	"modeling.html"
+					}
+				]
+			},
+			{
+				"name": "INVENTORS",
+				"list_class": "nav-list_item",
+				"link_class": "nav-list_inventors",
+				"url": "token.html",
+				"subMenus":[
+					{
+						"name": "FAQs",
+						"sublist_class": "nav-list-sub_item",
+						"sublink_class": "nav-list-sub_link",
+						"url": 	"faqs.html"
+					}
+				]
+			},
+			{
+				"name": "TEAM",
+				"list_class": "nav-list_item",
+				"link_class": "nav-list_team",
+				"url": "team.html"
 			}
-		], 
-		"cta": "Join PRIVATE-SALE"
+		]
 	},
 	"hero": {
 		"title": "A Decentralized Gaming Ecosystem Made By Players.",
 		"text": "Take your creative freedom to the next level & monetize it in the blockchain! Create & Play! "
 	},
 	"hero_right": {
-		"title": "PRIVATE-SALE",
+		"title": "Contribution Ends in:",
 		"text": "30% DISCOUNT BEGINS IN:",
 		"cta": "Join PRIVATE-SALE",
 		"discount": ""
 	},
-	"hero_video":{
-		"name":"hero",
-		"video":"../images/hero.mp4"
+	"hero_right_price":{
+		"items":[
+			{
+				"title": "USD",
+				"value": "20000"
+			},
+			{
+				"title": "SAND",
+				"value": "384615.2"
+			},
+			{
+				"title": "ETH",
+				"value": "96.32"
+			}
+		]
+	},
+	"partners":{
+		"title": "Amazing partners are working with us!",
+		"items1": [
+			{
+				"image":"../images/bancorlogo.png"
+			},
+			{
+				"image":"../images/animocalogo.png"
+			},
+			{
+				"image":"../images/opskinslogo.png"
+			},
+			{
+				"image":"../images/Godot_Logo.png"
+			},
+			{
+				"image":"../images/E_Logo.png"
+			},
+			{
+				"image":"../images/Everst_Logo.png"
+			},
+			{
+				"image":"../images/Crypto_Logo.png"
+			},
+			{
+				"image":"../images/BLMP_Logo.png"
+			},
+			{
+				"image":"../images/Dogi_Logo.png"
+			}
+		],
+		"items2": [
+			{
+				"image":"../images/winner.png"
+			},
+			{
+				"image":"../images/apple2012.png"
+			},
+			{
+				"image":"../images/apple2013.png"
+			},
+			{
+				"image":"../images/apple2017.png"
+			}
+		]
 	},
 	"sandbox": {
-		"title": "The Sandbox Tokens",
-		"text": "The gaming ecosystem will be comprised by a mix of ERC-20, ERC-721 NFT & New ERC Token Standards that are in development.",
+		"title": "What is the Sandbox?",
+		"text": "The Sandbox is a community-driven game ecosystem that empowers game makers to create, publish and monetize a myriad of unique experiences on a decentralized platform with cryptocurrency payments. Players can create and sell individual voxel objects, or ASSETS, and also combine ASSETS they make or acquire into a highly customizable game world called a BOX to create their own gaming experiences they can enjoy, share, and sell. With the support of creators around the world, our goal is to make The Sandbox the new standard in world-building games, with millions of user-created 3D voxel assets and games available as NFTs on the blockchain.",
 		"items": [
 			{
-				"class": "card-item",
-				"image": "../images/item2.png",
-				"title": "SAND",
-				"subtitle": "Fungible tokens based on the ERC-20 standard to purchase BOX & ASSETS in The Sandbox marketplace."
-			},
-			{
-				"class": "card-item",
-				"image": "../images/item1.png",
-				"title": "ASSET",
-				"subtitle": "Voxel creations to use inside BOX worlds as non-fungible tokens, created & traded by the community."
-			},
-			{
-				"class": "card-item",
-				"image": "../images/item4.png",
-				"title": "BOX",
-				"subtitle": "User generated Gaming Experiences! Built using the ERC Composable Token, to allow adding tokens inside other tokens."
-			},
-			{
-				"class": "card-item",
-				"image": "../images/item3.png",
-				"title": "AVATAR",
-				"subtitle": "Represent the player’s identity and can be created & customized by users!"
-			}
-		]
-	},
-	"advancements": {
-		"title": "Key Innovations",
-		"items": [
-			{
-				"class": "card-item key-card",
-				"image": "../images/item7.png",
-				"title": "Blockchain + IPFS",
-				"subtitle": "Step-by-step blockchain implementation process, starting with decentralization of particular gameplay elements, resulting in a full decentralization of the gaming experience over time."
-			},
-			{
-				"class": "card-item key-card",
-				"image": "../images/item9.png",
-				"title": "User Generated Content",
-				"subtitle": "Content will be created by the community with The Sandbox VoxEditor as well as imported from existing tools such as MagicaVoxel."
-			},
-			{
-				"class": "card-item key-card",
-				"image": "../images/item5.png",
-				"title": "Non Fungible Tokens",
-				"subtitle": "User-generated content will become ERC-721 non-fungible tokens (ASSETs) for the community to monetize & trade their creativity."
-			},
-			{
-				"class": "card-item key-card",
-				"image": "../images/item11.png",
-				"title": "Multiplayer",
-				"subtitle": "Creators will be able to add multiplayer elements to the BOX worlds they create, allowing the community to share experiences with their friends through online gaming experiences!"
-			}
-		]
-	},
-	"video": {
-		"title": "Teaser video",
-		"youtube_title": "See demo in Youtube",
-		"src": "../images/video.mp4",
-		"youtube_src": "../images/video.mp4"
-	},
-	"proposals": {
-		"title": "The Sandbox Proposals",
-		"triangle-image" : "../images/triangle-2.svg",
-		"items": [
-			{
-				"title": "What is The Sandbox? ",
-				"text": "The Sandbox is a decentralized, community-driven gaming ecosystem where creators can share and monetize voxel assets and gaming experiences in the blockchain! <br/> <br/>The three main Sandbox components are the VoxEditor, Marketplace and Game. Using VoxEditor, players can create or import their own voxel objects and turn them into ERC-721 non-fungible ASSET tokens. ASSETS can be added to collections or used create compelling Game experiences inside your BOX, a voxel space you can purchase, own, modify and even sell. All of this is possible thanks to SAND, an ERC-20 fungible token that will be used as the basis of transactions on the Marketplace, allowing you to exchange ASSET and BOX tokens with other players.",
-				"image": "../images/proposals-1.png",
-				"name": "zone_one",
-				"class": "proposals-item_img"
-			},
-			{
-				"title": "Sell & trade & your creations!",
-				"text": "We are developing a decentralized marketplace with no fees or market intervention as well as Cryptocurrency earnings for creators.<br/></br>Creators will receive 100% the price they set for their ASSETs, BOXs & AVATARs",
-				"image": "../images/proposals-2.png",
-				"name": "zone_two",
-				"class": "proposals-item_img proposals-item_img-smaller",
-				"invert": true
+				"title": "Sell & trade your creations!",
+				"text": "Publish your voxel creations on the blockchain!  Our open market will allow for the free trading of in-game NFT assets in The Sandbox and between different platform users. For example, game developers can acquire assets on The Sandbox and incorporate them into their own games.",
+				"image": "../images/sandbox-marketplace.png",
+				"button_text": "marketplace"
+
 			},
 			{
 				"title": "Create your own voxel assets and gaming worlds!",
-				"text": "True Ownership and Copyright registry of User Generated Content in the Ethereum Blockchain as Non-Fungible and composable tokens.<br/></br>Unique NFT and hashes will be assigned to creations, thus ensuring copyright will always be traseable back to the original creator of ASSETs, BOXs and AVATARs. ",
-				"image": "../images/proposals-3.png",
-				"name": "zone_three",
-				"class": "proposals-item_img proposals-item_img-smaller2"
-			},
-			{
-				"title": "Import your assets and gaming experiences to play and interact with them!",
-				"text": "Ability to play, interact and live within player-made voxel creations.<br/></br>Users will upload their gameplay experience to the game and interact with them. ",
-				"image": "../images/proposals-4.png",
-				"name": "zone_four",
-				"class": "proposals-item_img proposals-item_img-smaller3",
-				"invert": true
+				"text": "We are empowering creators with easy to use yet powerful content creation tools.  Our Editor allows anyone to make 3D voxel objects (or import their existing creations), animate them (frame by frame or skeleton-based) and turn them into NFTs to freely share or sell.",
+				"image": "../images/sandbox-editor.png",
+				"button_text": "editor"
 			}
 		]
 	},
-
-	"experience":{
-		"title": "Gaming Experience",
+	"experience": {
+		"title": "experience",
 		"items": [
-			{	
-				"title": "Battle Royale",
-				"image":"../images/Gameplay01.jpg",
-				"class":"experience-items-first_img",
-				"description":"Drop down to this island and prepare for a frenzied battle! You and 49 other players will all be trying to survive and be the last man standing, are you up for the challenge?"
-			},
-			{	
-				"title": "Racing",
-				"image":"../images/Gameplay02.jpg",
-				"class":"experience-items-second_img",
-				"description":"Feel the adrenaline of the speed course through your veins! These helicopter races will test your reflexes to the limit in order to see who is the very best! "
-			},
-			{	
-				"title": "Adventure",
-				"image":"../images/Gameplay03.jpg",
-				"class":"experience-items-third_img",
-				"description":"In a world reigned by darkness and chaos, only the chosen one will be able to save us all from evil. Are you the hero we need? There is only one way to find out..."
-			},
-			{	
-				"title": "Social Game",
-				"image":"../images/Gameplay04.jpg",
-				"class":"experience-items-forth_img",
-				"description":"Who would have guessed that partying with friends and dinosaurs would be so much fun? Come and meet lots of new friends in this wacky and goofy town! "
-			},
-			{	
-				"title": "Crafting",
-				"image":"../images/Gameplay05.jpg",
-				"class":"experience-items-forth_img",
-				"description":"New customers are coming and they want all sorts of weapons and armours, but your assistant has gone missing! Go into the wild, collect resources for the customer’s orders and find out what happened to your trusty assistant in this epic journey!"
-			},
-			{	
-				"title": "Sports",
-				"image":"../images/Gameplay06.jpg",
-				"class":"experience-items-forth_img",
-				"description":"Is your team ready to challenge other footvox legends in this unique 3vs3 competitive sports!? Climb to the top and become the world championship winner to win great prizes!"
-			},
-			{	
-				"title": "RPG",
-				"image":"../images/Gameplay07.jpg",
-				"class":"experience-items-forth_img",
-				"description":"In the kingdom of Glaernam, people fight each other to decide who will be the next supreme commander or the land. Gear up and show everyone what you’ve got in this persistent open world arena challenge!"
-			},
-			{	
-				"title": "Gambling",
-				"image":"../images/Gameplay08.jpg",
-				"class":"experience-items-forth_img",
-				"description":"Are you feeling lucky tonight? Let’s take lady luck for a game of lucky dice then! Choose a number, throw the dice and win amazing prizes!"
-			},
-			{	
-				"title": "Shooter",
-				"image":"../images/Gameplay09.jpg",
-				"class":"experience-items-forth_img",
-				"description":"People have gone crazy, horrible creatures have started to show up everywhere, and your squad is nowhere to be found. It all started when that ancient portal activated. You will have to find a way to shut it down!"
-			}
+			{ "image": "../images/exp1.png" },
+			{ "image": "../images/exp2.png" },
+			{ "image": "../images/exp3.png" },
+			{ "image": "../images/exp4.png" },
+			{ "image": "../images/exp5.png" },
+			{ "image": "../images/exp6.png" },
+			{ "image": "../images/exp7.png" }
+
 		]
 	},
-	"token": {
-		"title": "Token Economy",
-		"content": "Creators can build the Gaming Experience of their dreams by crafting inside their BOX and acquiring several rare and/or valuable ASSET voxel creations on the Marketplace. Customising their BOX with this diverse array of Creations will provide an enhanced gaming experience to their visitors and will make these BOX increasingly popular.",
-		"item_one_headline": "1,000,000,000",
-		"item_one_headline_two": "SAND",
-		"item_one_text": "SAND tokens will be issued in total on a total market cap of US$72.1M (1 SAND = US$0.07210)",
-		"item_two_headline": "59,438,187",
-		"item_two_text": "SAND tokens will be sold in the private sale at the end of July 2018.",
-		"item_three_headline": "30",
-		"item_three_headline_two": "%",
-		"item_three_text": "Private investors will receive a 30% discount on the token."		
-	},
-	"token_first_graph": {
-		"title": "Use of Funds",
-		"image": "../images/chart-1.svg",
-		"graph_title": "Token allocation",
+	"advancements": {
+		"title": "KEY INNOVATIONS",
 		"items": [
 			{
-				"title": "Token pre-sale and public sale",
-				"text": "50% (500M Tokens)",
-				"fill": "#ffa96a"
-			},
-			{
-				"title": "Company reserve",
-				"text": "20% (200M Tokens)",
-				"fill": "#3a6fe4"
-			},
-			{
-				"title": "Creators fund",
-				"text": "10% (100M Tokens)",
-				"fill": "#e9fdfc"
-			},
-			{
-				"title": "Founders team",
-				"text": "10% (100M Tokens)",
-				"fill": "#7e7e7e"
-			},   
-			{
-				"title": "Advisory board",
-				"text": "8% (80M Tokens)",
-				"fill": "#abaeb0"
-			},
-			{
-				"title": "Mktg bounty & finders programs",
-				"text": "2% (20M Tokens)",
-				"fill": "#464648"
+				"image": "../images/innovation1.png",
+				"title": "Blockchain + IPFS",
+				"text": "Our step-by-step blockchain implementation process starts with decentralizing particular game elements and moves to a full decentralization of the gaming experience over time to allow the maximum player and creator freedom."
+			},{
+				"image": "../images/innovation2.png",
+				"title": "NON-FUNGIBLE TOKENS",
+				"text": "User-generated content will become ERC-1155 non-fungible tokens (ASSETs) for the community to monetize & trade their creativity."
+			},{
+				"image": "../images/innovation3.png",
+				"title": "USER GENERATED CONTENT",
+				"text": "Content will be created by the community with The Sandbox VoxEditor as well as imported from existing software such as MagicaVoxel."
+			},{
+				"image": "../images/innovation4.png",
+				"title": "MULTIPLAYER",
+				"text": "Creators will be able to add multiplayer elements to the BOX worlds they create, allowing the community to share experiences with new and existing friends online."
 			}
 		]
+	
 	},
-	"token_second_graph": {
-		"title": "Use of proceeds",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit bibendum enim, ac porttitor diam laoreet eget. Fusce ultrices tortor in molestie ornare. Nullam non metus nisl. Aenean placerat sit amet ligula in fringilla. Cras eget lorem fermentum, molestie quam eu, placerat tellus. Pellentesque sagittis, diam id varius eleifend, nisi tortor pulvinar ligula, in dapibus odio mi ac libero. Sed eleifend condimentum justo, at consequat mauris faucibus et. Donec scelerisque consectetur magna, vehicula commodo tortor porttitor et.",
+
+	"amazing_team":{
+		"title": "AMAZING TEAM!",
+		"text": "Our team includes 15 people with 70+ years of cumulated experience, as well as some of  the best advisors in gaming and blockchain in the industry",
+		"text_btn": "KNOW OUR TEAM",
 		"items": [
-			{
-				"title": "Operational & Development",
-				"text": "50% (500M Tokens)",
-				"fill": "#ffa96a"
+			{	
+				"name": "Arthur Madrid",
+				"image": "../images/team/arthur.jpg",
+				"position": "CEO of Pixowl"
 			},
-			{
-				"title": "Marketing & Community",
-				"text": "20% (200M Tokens)",
-				"fill": "#3a6fe4"
+			{	
+				"name": "Sebastien Borget",
+				"image": "../images/team/seb.jpg",
+				"position": "COO of Pixowl"
 			},
-			{
-				"title": "Security & Legal & Compliance",
-				"text": "10% (100M Tokens)",
-				"fill": "#e9fdfc"
+			{	
+				"name": "Ed Fries",
+				"image": "../images/team/ed.png",
+				"position": "Co-Founder of Xbox"
 			},
-			{
-				"title": "Blockchain Ecosystem",
-				"text": "10% (100M Tokens)",
-				"fill": "#7e7e7e"
+			{	
+				"name": "Mick Nayeem",
+				"image": "../images/team/mik.png",
+				"position": "Partner at CryptoKitties"
 			}
 		]
 	},
-	"video_market": {
-		"title": "Video game market",
-		"item_one_title": "Video game global market",
-		"item_one_first_bold": "2018",
-		"item_one_first_text": "= 137.9 Bn",
-		"item_one_second_bold": "2021",
-		"item_one_second_text": "= 180.1 Bn",
-		"item_one_first_description": "Lorem texto mobile wgames will genrate of the global market",
-		"item_one_paragraph": "Lorem texto mobile wgames will genrate of the global market",
-		"item_two_title": "AV/VR market",
-		"item_two_first_bold": "2018",
-		"item_two_first_text": "= 137.9 Bn",
-		"item_two_second_bold": "2021",
-		"item_two_second_text": "= 180.1 Bn",
-		"item_two_paragraph": "Lorem texto mobile wgames will genrate of the global market",
-		"item_three_title": "UGC games market",
-		"item_three_first_headline": "ROBLOX:",
-		"item_three_first_text": "64M Monthy Active players",
-		"item_three_second_text": "780M Hours played each month",
-		"item_three_third_text": "3M active creators last month",
-		"item_three_second_headline": "Minecraft:",
-		"item_three_second_first_text": "74M Monthy Active players",
-		"item_three_second_second_text": "3M active creators last moth",
-		"item_fourth_headline": "Creator market",
-		"item_fourth_first_bold": "2018",
-		"item_fourth_first_text": "137.9 Bn",
-		"item_fourth_second_bold": "2021",
-		"item_fourth_second_text": "180.1 Bn",
-		"item_fourth_paragraph": "Lorem texto mobile wgames will genrate of the global market"
-	},
-	"gamemarket": {
-		"title": "Video game market",
-		"count_items": [
-					{
-						"header" : "../images/market-wins.png",
-						"body_text" : "6",
-						"body_comment" : "",
-						"name" : "count_years",
-						"style" : "padding-top:15%;",
-						"footer" : "Years of Success"
-					},
-					{
-						"header" : "../images/market-downloads.png",
-						"body_text" : "40M",
-						"body_comment" : "",
-						"name" : "count_downloads",
-						"style" : "padding-top:33%",
-						"footer" : "downloads"
-					},
 
-					{
-						"header" : "../images/market-players.png",
-						"body_text" : "1.2M",
-						"body_comment" : "",
-						"name" : "count_players",
-						"style" : "padding-top:33%",
-						"footer" : "monthly players"
-					},
-					{
-						"header" : "../images/market-worlds.png",
-						"body_text" : "100K",
-						"body_comment" : "",
-						"name" : "count_worlds",
-						"style" : "padding-top:33%",
-						"footer" : "new worlds <br/> each day!"
-					}
-		],
-		"market_main":{
-			"first":{
-				"title":"Global",
-				"text":"In 2018 Mobile Games Will Generate $70.3Bn (51% of the global market)",
-				"year1":"2018",
-				"year2":"2021",
-				"VRyear":"VR In 2018",
-				"ARyear":"AR In 2018",
-				"year1Value":"=137.9Bn",
-				"year2Value":"=180.1Bn",
-				"VRvalue":"= $4.5 Bn",
-				"ARvalue":"= $3.2 Bn"
-
-			},
-			"second":{
-				"title":"UGC Games",
-				"img1": "../images/roblox.png",
-				"img2": "../images/roblox-minecraft.png",
-				"text1":"64M Monthly Active Players 780M Hours played each month 3M Active Creators last month",
-				"text2":"74M MAUs in 2017 144M Copies sold worldwide"
-
-			},
-			"third":{
-				"title":"Creators",
-				"subtitle":"SKETCHFAB:",
-				"text1":"100,000 Uploads in +700 days.",
-				"text2":"400 to 1000 3D Models uploaded per day approx."
-
-			},
-			"forth":{
-				"title":"Blockchain",
-				"text1":"+50 Cryptogames listed & growing every day!",
-				"text2":"Cryptokitties being sold up to $300,000!"
-
-			}
-		}
-
-
-	},
-	"roadmap": {
+	"roadmap":{
 		"title": "Achieved Milestones",
 		"items": [
 			{
 				"year": "2011",
 				"title": "Pixowl is founded",
-				"text": "Pixowl is founded",
-				"position": "left"
+				"text": "Pixowl is founded.",
+				"position": "up"
 			},
 			{
 				"year": "May 2012",
 				"title": "The Sandbox franchise launches on iOS",
-				"text": "The Sandbox is awarded Best Game of the year by Apple",
-				"position": "right"
+				"text": "The Sandbox is awarded Best Game of the year by Apple.",
+				"position": "down"
 			},
 			{
 				"year": "Feb 2013",
-				"title": "The Sandbox is released for Android. (1st title)",
+				"title": "The Sandbox is released for Android (1st title)",
 				"text": "",
-				"position": "left"
+				"position": "up"
 			},
 			{
 				"year": "2014",
-				"title": "The Sandbox surpasses 10M downloads.",
-				"text": "Steam Version of The Sandbox released. Partnership with Skybound - The Invincible. The Sandbox's new EDU version for STEM education",
-				"position": "right"
+				"title": "The Sandbox surpasses 10M downloads",
+				"text": "Steam Version of The Sandbox released. Partnership with Skybound - The Invincible. The Sandbox's new EDU version for STEM education.",
+				"position": "down"
 			},
 			{
 				"year": "2015",
 				"title": "The Sandbox Evolution is announced at GDC conference (2nd title)",
-				"text": "The Sandbox surpasses 16M installs",
-				"position": "left"
+				"text": "The Sandbox surpasses 16M installs.",
+				"position": "up"
 			},
 			{
 				"year": "2016",
-				"title": "The Sandbox Evolution released on iOS, Android & Steam.",
-				"text": "Partnership with Sony - Ghostbusters",
-				"position": "right"
+				"title": "The Sandbox Evolution released on iOS, Android & Steam",
+				"text": "Partnership with Sony - Ghostbusters.",
+				"position": "down"
 			},
 			{
 				"year": "2017",
-				"title": "The Sandbox Evolution receives 2 big partnerships",
+				"title": "The Sandbox Evolution receives 2 big partnerships<br/><br/>Bandai Namco brings PAC-MAN to the game<br/><br/>Dreamworks brings Shrek to the game<br/><br/>The Sandbox Evolution announced free download in Steam",
 				"text": "Bandai Namco brings PAC-MAN to the game. Dreamworks brings Shrek to the game. The Sandbox Evolution announced free download in Steam.",
-				"position": "left"
+				"position": "up"
 			},
 			{
 				"year": "Apr 2018",
-				"title": "The Sandbox surpasses 40M downloads and 70M player creations.",
+				"title": "The Sandbox surpasses 40M downloads and 70M player creations<br/><br/>The Sandbox Surpasses 750K followers on Facebook",
 				"text": "The Sandbox Surpasses 750K followers on Facebook.",
-				"position": "right"
+				"position": "down"
 			},
 			{
 				"year": "May 2018",
 				"title": "The Sandbox 3D on the Blockchain project is announced at Pocket Gamer Connect conference",
 				"text": "",
-				"position": "left"
+				"position": "up"
 			},
 			{
-				"year": "August 2018",
-				"title": "ICO Launch",
+				"year": "Q4 2018",
+				"title": "ICO Phase1-Private Sale<br/>ICO Phase2-Pre-Sale<br/>ICO Phase3-Public Sale <br/><br/> UGC NFT Marketplace & VOX Editor <br>Create & trade your own voxel assets and gaming worlds!<br/><br/>Social Experience<br/>Play & share with friends through online gaming experiences!<br/><br/>User Generated Gameplay Experience<br/>Play, interact and live within playermade voxel creations!",
 				"text": "The Sandbox begins its Initial Coin Offering through a private sale.",
-				"position": "right"
+				"position": "down"
 			}
 		]
 	},
+
+	"sandtoken":{
+		"title": "THE SANDBOX TOKEN",
+		"description": "The gaming ecosystem will be comprised by a mix of ERC-20, ERC-721 NFT & New ERC Token Standards that are in development.",
+		"items": [
+			{
+				"class": "card-item",
+				"image": "../images/item1.png",
+				"title": "SAND",
+				"subtitle": "Utility tokens based on the ERC-20 standard to purchase BOX & ASSETS in The Sandbox marketplace."
+			},
+			{
+				"class": "card-item",
+				"image": "../images/item2.png",
+				"title": "ASSET",
+				"subtitle": "Voxel creations to use inside BOX worlds as non-fungible tokens, created & traded by the community."
+			},
+			{
+				"class": "card-item",
+				"image": "../images/item3.png",
+				"title": "BOX",
+				"subtitle": "User generated Gaming Experiences! Built using the ERC Composable Token, to allow adding tokens inside other tokens."
+			},
+			{
+				"class": "card-item",
+				"image": "../images/item4.png",
+				"title": "AVATAR",
+				"subtitle": "Represent the player’s identity and can be created & customized by users!"
+			}
+		],
+		"eco_title": "TOKEN ECONOMY",
+		"eco_description": "Creators can build the Gaming Experience of their dreams by crafting inside their BOX and acquiring several rare and/or valuable ASSET voxel creations from the Marketplace. Customising their BOX with this diverse array of Creations will provide an enhanced gaming experience to their visitors and will make their BOX increasingly popular."
+	},
+
+	"tokenprice": {
+		"title": "SAND Token Price Growth",
+		"items":[
+			{
+				"title":"PLAYERS",
+				"content1":"Obtain SAND from winning games! Such as battles, races, contests, etc.",
+				"content2":"They consume SAND to pay entry fees and play on their favorite BOXES.",
+				"arrow_image": "../images/left-arrow.png",
+				"asset_image": "../images/asset1.png",
+				"className":"arrow-left"
+			},
+			{
+				"title":"BOX CREATORS",
+				"content1":"Earn SAND when players pay an entry fee to their BOXES. As well as when they sell their BOXES to others.",
+				"content2":"They spend SAND to purchase ASSETS (They need dozens to hundreds of them per BOX created).",
+				"arrow_image":"../images/down-arrow.png",
+				"asset_image": "../images/asset2.png",
+				"className":"arrow-center"
+			},
+			{
+				"title":"ASSET CREATORS",
+				"content1":"Obtain SAND when BOX creators purchase the ASSETS.",
+				"content2":"They use SAND to register their ASSETS on the blockchain. (Tokenization of NFT).",
+				"arrow_image":"../images/right-arrow.png",
+				"asset_image": "../images/asset3.png",
+				"className":"arrow-right"
+			}
+		],
+		"coin_image": "../images/coin.png",
+		"coin_content1": "The growing number of CREATORS, ASSETS, BOXES and PLAYERS will increase the volume of transactions.",
+		"coin_content2": "The scarcity of some ASSETS and BOXES will create demand while their limited supply will drive prices up."
+	},
+	"token_first_graph": {
+		"title": "TOKEN ECONOMY",
+		"graph_title": "Token allocation",
+		"text": "Total Token Supply: 1,000,000,000 SAND<br>The 10% Creators Fund will be used to encourage and promote the creation of NFTs on our Marketplace.",
+		"items": [
+			{
+				"title": "COMPANY RESERVE",
+				"text": "34.95%",
+				"fill": "#ffa96a"
+			},
+			{
+				"title": "TOKEN SALE",
+				"text": "40%",
+				"fill": "#3a6fe4"
+			},
+			{
+				"title": "CREATORS FUND",
+				"text": "10%",
+				"fill": "#e9fdfc"
+			},
+			{
+				"title": "CORE TEAM",
+				"text": "8.05%",
+				"fill": "#7e7e7e"
+			},   
+			{
+				"title": "ADVISORY BORAD",
+				"text": "5%",
+				"fill": "#abaeb0"
+			},
+			{
+				"title": "BOUNTY-FINDERS FEE PROGRAM",
+				"text": "2%",
+				"fill": "#464648"
+			}
+		]
+	},
+
+	"use_proceeds":{
+		"title": "Use of proceeds",
+		
+		"items": [
+			{
+				"title":"Operational & Development Expenses",
+				"percent":"52%"
+			},
+			{
+				"title":"Marketing, PR & Community",
+				"percent":"42%"
+			},
+			{
+				"title":"Security, Legal & Compliance",
+				"percent":"4%"
+				
+			},
+			{
+				"title":"Other Expenses",
+				"percent":"2%"
+			}
+		]
+	},
+
+
 	"team": {
-		"title": "The company",
-		"text": "Pixowl has previously raised $2M with notable investors and is backed by top industry advisors.",
+		"title": "AMAZING TEAM!",
+		"subtitle": "Our teamincludes 15 people with 70+ years of cumulated experience, as well as some of the best advisords in gaming and blockchain in the industry.",
 		"paragraph": "Founded in 2011 and headquartered in San Francisco, with development studios in Buenos Aires, Argentina, Pixowl, Inc. is a mobile game development company that creates and combines player-centric worldbuilding experiences and character-driven narratives. Pixowl’s experienced international team of dynamic innovators give mobile and PC gamers the ability to build worlds featuring both original and IP-based content.",
+		
 		"items": [
 			{
 				"class": "team-main_item",
@@ -558,7 +519,7 @@
 				"class": "team-main_item",
 				"id": "lucas_s",
 				"image": "../images/team/lucas_shrewsbury.jpg",
-				"name": "Lucas Shrewbury",
+				"name": "Lucas Shrewsbury",
 				"position": "CTO of Pixowl, ex-CTO of Gameloft",
 				"description": "Lucas has spent more than a decade leading mobile gaming studios. While at Gameloft Argentina, he managed the studio and a team of 200 people.",
 				"linkedin": "https://www.linkedin.com/in/lshrewsbury"
@@ -571,11 +532,56 @@
 				"position": "CFO of Pixowl",
 				"description": "Former Regional Director at PokerStars. Co-founder of the 1st online payment company in Latam and +20 years experience in Finance, Tech and Gaming.",
 				"linkedin": "https://www.linkedin.com/in/marcelosanturio"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "andres",
+				"image": "../images/team/andres.jpg",
+				"name": "Andres Soechting",
+				"position": "Blockchain Producer & Startup CTO",
+				"description": "Producer | Startup CTO | Product Developer | Game Designer",
+				"linkedin": "https://www.linkedin.com/in/andres-soechting/"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "ronan",
+				"image": "../images/team/ronan.jpg",
+				"name": "Ronan Sandford",
+				"position": "Lead Blockchain Developer",
+				"description": "Created Etherplay in 2016, the first blockchain skill-based games platform offering ETH rewards pools on a pay to play model. Over 3 years experience in Blockchain games development and 8 in video game industry",
+				"linkedin": "https://www.linkedin.com/in/ronansandford/"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "thibault",
+				"image": "../images/team/thibault.jpg",
+				"name": "Thibault Simar",
+				"position": "Art Director",
+				"description": "2D/3D artist specialized in motion design, addicted to voxels. Founder of Voxelmade.com.",
+				"linkedin": "https://voxelmade.com"
+			}
+
+			
+		],
+		"others": [
+			{
+				"value": "15",
+				"text":"Dedicated People"
+			},
+			{
+				"value": "70",
+				"text":"Years Experience"
+			},
+			{
+				"value": "11",
+				"text":"GaMES SHIPPED"
 			}
 		]
 	},
+
+	
 	"advisors": {
-		"title": "Our Advisors",
+		"title": "OUR GREAT ADVISORS!",
 		"items": [
 			{
 				"class": "team-secondary_item",
@@ -633,12 +639,39 @@
 			},
 			{
 				"class": "team-secondary_item",
-				"id": "pablograndinetti",
-				"image": "../images/team/pablograndinetti.jpg",
-				"name": "Pablo Grandinetti",
-				"position": "Social Entrepreneur",
-				"description": "Pablo is a serial entrepreneur and seasoned executive. In the past 18 years he co-founded and exited several companies",
-				"linkedin": "https://www.linkedin.com/in/pablograndinetti/"
+				"id": "allen",
+				"image": "../images/team/Allen.png",
+				"name": "Allen Ng ",
+				"position": "CEO, Everest Ventures",
+				"description": "5 years of venture building, investment and M&A experience.",
+				"linkedin": "https://www.linkedin.com/in/allenngg/"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "robby",
+				"image": "../images/team/Robby.png",
+				"name": "Robby Yung",
+				"position": "CEO, Animoca Brands",
+				"description": "Started several businesses in China and Hong Kong, including those in mobile telecoms and software applications, cable television, internet services, outdoor advertising, and publishing.",
+				"linkedin": "https://www.linkedin.com/in/robyung/"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "wilhem",
+				"image": "../images/team/Wilhem.png",
+				"name": "Wilhelm Taht",
+				"position": "EVP / GM Games",
+				"description": "Track record as commercial and strategic leader in global media & software organizations and start-ups. Extensive network in media, games & music industries. ",
+				"linkedin": "https://www.linkedin.com/in/wilhelmtaht/"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "holly",
+				"image": "../images/team/Holly.png",
+				"name": "Holly Liu       ",
+				"position": "Founder @Kabam    ",
+				"description": "Holly Liu founded the venture backed mobile gaming company, Kabam in 2006 with UC Berkeley alumni. ",
+				"linkedin": "https://www.linkedin.com/in/hollyhliu/"
 			}
 			
 			
@@ -649,31 +682,14 @@
 		"items": [
 			{
 				"class": "team-secondary_item",
-				"id": "ronan",
-				"image": "../images/team/ronan.jpg",
-				"name": "Ronan Sandford",
-				"position": "Lead Blockchain Developer",
-				"description": "Created Etherplay in 2016, the first blockchain skill-based games platform offering ETH rewards pools on a pay to play model. Over 3 years experience in Blockchain games development and 8 in video game industry",
-				"linkedin": "https://www.linkedin.com/in/ronansandford/"
+				"id": "martin",
+				"image": "../images/team/martin_martelletti.jpg",
+				"name": "Martin Martelletti",
+				"position": "Senior Game Designer",
+				"description": "Over 4 years of experience creating interactive experiences for multiple platforms and genres. Wide knowledge of blockchain environment.",
+				"linkedin": "https://www.linkedin.com/in/martinmartelletti/"
 			},
-			{
-				"class": "team-secondary_item",
-				"id": "thibault",
-				"image": "../images/team/thibault.jpg",
-				"name": "Thibault Simar",
-				"position": "Art Director",
-				"description": "2D/3D artist specialized in motion design, addicted to voxels. Founder of Voxelmade.com.",
-				"linkedin": "https://voxelmade.com"
-			},
-			{
-				"class": "team-secondary_item",
-				"id": "andres",
-				"image": "../images/team/andres.jpg",
-				"name": "Andres Soechting",
-				"position": "Blockchain Producer & Startup CTO",
-				"description": "Producer | Startup CTO | Product Developer | Game Designer",
-				"linkedin": "https://www.linkedin.com/in/andres-soechting/"
-			},
+			
 			{
 				"class": "team-secondary_item",
 				"id": "leon",
@@ -683,14 +699,16 @@
 				"description": "Solidity Developer - Game Developer - Full Stack Web Developer",
 				"linkedin": "https://www.linkedin.com/in/guillermo-jos%C3%A9-le%C3%B3n-isla-756654168/"
 			},
+			
+			
 			{
 				"class": "team-secondary_item",
-				"id": "martin",
-				"image": "../images/team/martin_martelletti.jpg",
-				"name": "Martin Martelletti",
-				"position": "Senior Game Designer",
-				"description": "Over 4 years of experience creating interactive experiences for multiple platforms and genres. Wide knowledge of blockchain environment.",
-				"linkedin": "https://www.linkedin.com/in/martinmartelletti/"
+				"id": "dami",
+				"image": "../images/team/dami.jpg",
+				"name": "Damián Volantino",
+				"position": "Senior UX/UI Designer",
+				"description": "UX/UI Designer - Blockchain Technical Designer with 9+ years of experience in the gaming industry.",
+				"linkedin": "https://www.linkedin.com/in/dami%C3%A1n-volantino-30720835/"
 			},
 			{
 				"class": "team-secondary_item",
@@ -700,25 +718,20 @@
 				"position": "Blockchain Project Manager",
 				"description": "Crypto-enthusiast involved in Mobile Games Project Management & Marketing.",
 				"linkedin": "https://www.linkedin.com/in/lucas-uema-4109077b/"
+			},
+			{
+				"class": "team-secondary_item",
+				"id": "damil",
+				"image": "../images/team/damil.png",
+				"name": "Damián Linossi",
+				"position": "Concept Artist",
+				"description": ".",
+				"linkedin": ""
 			}
 
 		]
 	},
-	"partners":{
-		"title": "Partners",
-		"subtitle": "See some of our amazing partners",
-		"items": [
-			{
-				"image":"../images/bancorlogo.png"
-			},
-			{
-				"image":"../images/animocalogo.png"
-			},
-			{
-				"image":"../images/opskinslogo.png"
-			}
-		]
-	},
+	
 	"faqs": {
 		"title": "FAQs",
 		"items": [
@@ -853,5 +866,64 @@
 
 		]
 
+	},
+
+	"banner": {
+		"items": [
+			{ "title": "create." }, 
+			{ "title": "animate." },
+			{ "title": "play." }
+		],
+		"bg_img": "../images/Editor-banner1.png",
+		"subtitle": "VoxEditor is the first software that allows you to create your own voxel models, rig them and animate them in no time."
+		
+	},
+	"feature": {
+		"title": "VoxEditor features",
+		"items": [
+			{ 
+				"title": "Modeling",
+				"image": "../images/modeling.jpg",
+				"content": "Make the most of your creativity with a robust set of tools created for anyone to start making amazing stuff right away with our super user-friendly interface."
+			},
+			{ 
+				"title": "Animation",
+				"image": "../images/animation.jpg",
+				"content": "Make the most of your creativity with a robust set of tools created for anyone to start making amazing stuff right away with our super user-friendly interface."
+			},
+			{ 
+				"title": "Tilemap(coming soon)",
+				"image": "../images/tilemap.jpg",
+				"content": "Make the most of your creativity with a robust set of tools created for anyone to start making amazing stuff right away with our super user-friendly interface."
+			}
+		]
+	},
+	"artists":{
+		"title": "What our Artists are creating",
+		"items": [
+			{ 
+				"title": "Racing Monster",
+				"image": "../images/racing.png",
+				"owner": "William Santacruz"
+			},
+			{ 
+				"title": "Warrior Lizard",
+				"image": "../images/warrior.png",
+				"owner": "Thibault"
+			},
+			{ 
+				"title": "Spaceship",
+				"image": "../images/spaceship.png",
+				"owner": "Nicolás Morrone"
+			},
+			{ 
+				"title": "Animal",
+				"image": "../images/animal.png",
+				"owner": "Agustín Ahibe"
+			}
+		]
 	}
+
+
+
 }

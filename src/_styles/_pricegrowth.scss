@@ -1,0 +1,173 @@
+.pricegrowth{
+    max-width: 1575px;
+    background-color: #292929;
+    margin: auto;
+    color: #ffffff;
+    margin-top: 650px;
+    margin-bottom: 200px;
+    &-zone{
+        position: relative;
+    }
+
+    &:before{
+        width: 100%;
+        max-width: 1575px;
+        height: 100px;
+        content: " ";
+        position: absolute;
+        background-image: url("../images/top-trangle-black.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 100px, cover;
+        margin: auto;
+        margin-top: -100px;
+        
+    }
+    &:after{
+        width: 100%;
+        max-width: 1575px;
+        height: 100px;
+        content: " ";
+        position: absolute;
+        background-image: url("../images/bottom-trangle-black.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 100px, cover;
+        margin: auto;
+    }
+
+    &-title{
+        font-family: "Montserrat";
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 55px;
+        text-transform: uppercase;
+        top: 20px;
+    }
+
+    &-graph1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 150px;
+
+        hr{
+            border:none;
+            height: 1px;
+            background-color: #ffffff;
+            margin-top: 10%;
+        }
+
+        .graph1-bg{
+            width: 323px;
+            height: 555px;
+            position: relative; 
+            padding-left: 35px;
+            padding-right: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+
+            .asset{
+                position: absolute;
+                top: -18%;
+                left:50%;
+            }
+
+            .arrow{
+                position: absolute;
+                bottom: -20%;
+                margin: auto;
+                left: 42%;
+            }
+
+        }
+        .graph1-connection{
+            margin-left: -35px;
+            margin-right: -35px;
+            z-index: 2;
+        }
+
+        .graph1-small{
+            background-image: url("../images/buble1.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .graph1-big{
+            background-image: url("../images/buble2.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .title{
+            margin-top: 70%;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+        .text1, .text2{
+            font-size: 16px;
+            font-weight: 400;    
+            margin-top: 10%;   
+        }
+
+        .graph1-left{
+            .asset{
+                margin-left: -170px
+            }
+        }
+        .graph1-center{
+            .asset{
+                margin-left: -110px
+            }
+            .arrow{
+                bottom: -40%;
+            }
+        }
+        .graph1-right{
+            .asset{  
+                margin-left: -100px
+            }
+        }
+    }
+
+    &-graph2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 150px;
+        .graph2-bg{
+            width: 323px;
+            height: 326px;
+            background-image: url("../images/buble3.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .graph2-connection{
+            margin: 50px;
+
+        }
+
+        .graph2-coin-content{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}

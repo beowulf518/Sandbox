@@ -20,7 +20,52 @@
 }
 
 
+polyline{
+  opacity: .3;
+  stroke: #878787;
+  stroke-width: 3px;
+  fill: none;
+}
 
+.labelName text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  fill: #878787;
+}
+
+.labelNameToken text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  fill: #878787;
+}
+
+.labelPercent{
+  font-size: 24px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: 600;
+  fill: #878787;;
+}
+
+.centerTitle1, .centerTitle2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+
+.first-Donuts-tooltip-label{
+  font-size:20px;font-weight:600;
+}
+.first-Donuts-tooltip-percentage{
+  font-size:18px;font-weight:400;
+}
 
 
 /*------------------------------------*\
@@ -37,6 +82,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(#35a9ee, #d9658c);
 }
 
 /* Visually hidden class */
@@ -108,7 +154,7 @@ strong{
 
 @media (max-width: $m768) {
   img{
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -126,7 +172,7 @@ strong{
 }
 
 .zone{
-  padding-top: 88px;
+  padding-top: 68px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +185,7 @@ strong{
   &-key{
     padding-top: 0;
     position: relative;
-    top: -15vh;
+    top: 10vh;
   }
 
   @media (max-width: $m1200) {
@@ -167,336 +213,22 @@ strong{
 @import '../_modules/header/header';
 @import '../_modules/hero/hero';
 @import '../_modules/nav/nav';
-@import '../_modules/modal/modal';
-@import 'sandbox';
-@import 'key';
-@import 'video';
-@import 'proposals';
-@import 'token';
-@import 'funds';
-@import 'experience';
-@import 'videoMarket';
-@import 'roadmap';
+@import '../_modules/partner/partner';
+@import '../_modules/sandbox/sandbox';
+@import '../_modules/innovation/innovation';
+@import '../_modules/roadmap/roadmap';
+
+
+
+@import 'sandtoken';
+@import 'pricegrowth';
+@import 'tokeneco';
 @import 'team';
-@import 'subscribe';
-@import 'faqs';
-@import 'partners';
-@import '../_modules/smtag/smtag';
-@import '../_modules/lgtag/lgtag';
-@import '../_modules/slides/slides';
-@import '../_modules/person/person';
+@import 'editor';
+
 @import '../_modules/footer/footer';
 
 
-
-
-
-/*------------------------------------*\
-	Cards
-\*------------------------------------*/
-.card{
-  &-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 96px;
-    grid-row-gap: 48px;
-  }
-  &-item{
-    flex-grow: 1;
-    text-align: center;
-  }
-
-  .sandbox &-list{
-    margin-bottom: 88px;
-  }
-
-  @media (max-width: $m1200) {
-    &-list{
-      grid-template-columns: 1fr;
-      width: 90%;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-}
-
-.market{
-  overflow-x:hidden;
-  background-color: #e9fdfc;
-  display: block;
-  .font{
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-    font-weight: 700;
-  }
-
-  &-header{
-    &_title{
-    }
-    &_img{
-        width: 100%;
-    }
-  }
-  &-body{
-    
-    padding:5% 8%;
-    display: block;
-    //height:2200px;
-
-    &-main{
-      width: 120%;
-      margin-left: -8%;
-      position: relative;
-      display: flow-root;
-      clear: both;
-      padding:5% 5%;
-      padding-left: 10%;
-      //height:1200px;
-      
-    }
-
-    @media(max-width:450px){
-      padding:5% 0%;;
-    }
-
-    .count-up{
-      width:100%;
-      padding: 0 0%;
-      padding-left: 15%;
-      
-      font-family: 'Montserrat', sans-serif;
-      &-middle{
-        background-image: url(../images/countup-middle.png);
-        background-size: auto;
-        float: left;
-        width: 20%;
-        height: 5vw;
-        margin-top: 4.5vw;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      &-item{
-        float:left;
-        width: 17%;
-        margin: 2.4%;
-        padding:2%;
-        margin-top:0;
-        text-align: center;
-        &_header{
-          margin-left: 35%;
-          height:0;
-          width:30%;
-          padding-bottom: 20%;
-          position: relative;
-          &_img{
-            top:0;left:0;
-            width:100%;
-          }
-        }
-        &_body{
-          height: 0;
-          margin-top:10%;
-          padding-bottom: 100%;
-          width: 100%;
-          border-radius: 50%;
-          background-image: linear-gradient(-35deg, #ffb077 0%, #ffa96a 100%);
-          color:white;
-          font-size: 85px;
-          font-weight: 700;
-          text-align: center;
-
-          &_text{
-            font-size: 50px;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            font-size: 1.6vw;
-            line-height: 2;
-          }
-          &_comment{
-            font-size: 35px;
-            letter-spacing: -1.6px;
-            font-size: 1.8vw;
-          }
-        }
-        &_footer{
-          font-size: 30px;
-          font-weight: 400;
-          letter-spacing: -1.2px;
-          font-size: 1.5vw;
-          padding-top:8px;
-        }
-      }
-      @media(max-width:1200px){
-        &-item{
-          width:34%!important;
-          margin-left: 4%;
-          
-          .count-up-item_body:first-of-type{
-
-          }
-          &_body_text{
-            font-size: 3.6vw;
-          }
-          
-          &_body_comment{
-            font-size: 4vw;
-          }
-          &_footer{
-            font-size: 2.5vw;
-          }
-        }
-      }
-
-      @media(max-width:450px){
-        width:100%;
-        padding: 0px;
-
-        &-item{
-          width:50%!important;
-          margin-left: 0px;
-          margin:0px;
-          padding:7%;
-        }
-
-      }
-    }
-
-  }
-}
-
-#count_years{
-  font-size: 3vw;
-}
-@media(max-width:1200px){
-  #count_years{
-    padding-top: 18%!important;
-    font-size: 6.5vw;
-  }
-  .market-body{
-    margin-top:0vw;
-  }
-  .market-header_title{
-    text-align: center;
-  }
-  .market-body-main{
-    margin-left: 0%;
-    padding-top: 10%;
-  }
-}
-
- @media(max-width:450px){
-   #count_years{
-      padding-top: 10%!important;
-      font-size: 13.0vw;
-    }
-    .market-body .count-up-item_body_text {
-    font-size: 6.3vw;
-    }
-    .market-body .count-up-item_footer {
-      font-size: 4vw;
-    }
- }
-
-.market_gird{
-    clear:both;
-    width:90%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 24px;
-
-    &-item{
-        background-image: url(../images/marketing_layer.png);
-        background-position: top center;
-        background-repeat: no-repeat;
-        text-align: center;
-        padding-top: 60px;
-        padding-bottom: 200px;
-        margin-bottom: 70px;
-    }
-
-    .market-item_one{
-      font-size: 35px;
-      color: white;
-      font-weight:700;
-      padding-bottom:50px;
-    }
-
-    .market-item_two{
-      color: #ffffff;
-      font-size: 18px;
-      line-height: 20px;
-      padding:20px;
-      margin:auto;
-      max-width: 310px;
-    }
-
-    @media (max-width: 1550px) {
-
-      &-item{
-        background-size:100% 80%;
-      }
-    }
-
-    @media (max-width: 1200px) {
-
-      grid-template-columns: repeat(2,2fr);
-      .market-item_one{
-          font-size: 30px;
-        }
-        &-item{
-          background-size:auto auto;
-         
-        }
-
-    }
-
-    @media (max-width: $m992) {
-
-        grid-template-columns: 1fr;
-
-        &-item{
-
-            background-image: url(../images/market-mobile-layer-new.png)! important;
-            background-position: top center;
-            background-repeat: no-repeat;
-            background-size: auto auto;
-            margin-bottom: 0;
-            padding-bottom: 330px;
-            padding-top:47px;
-            margin-top: -324px;
-
-            &:nth-child(1){
-              margin-top: 30px;
-
-            }
-            &:nth-child(4){
-              margin-bottom: 50px;
-
-            }
-        }
-
-        .market-item_one{
-          font-size: 30px;
-          color: white;
-          font-weight:700;
-        }
-
-        .market-item_two{
-          margin:auto;
-          max-width:280px;
-        }
-    }
-
-    @media (max-width: $m768) {
-      img{
-        width: 57%;
-      }
-    }
-
-}
 
 
 // Box sizing partial styles:
@@ -525,3 +257,41 @@ $background_color_1: #FFF;
 /* ----------------------------------------------------------------
   Counter
 -----------------------------------------------------------------*/
+
+.heros-middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url("../images/middle-bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 700px;
+  margin-top:400px;
+  &-img{
+    margin-top:-500px;
+  }
+
+  @media (max-width: 1500px) {
+       
+      &-img{
+        img{
+          width:40vw;
+        }
+      }
+        
+  }
+}
+
+
+.sandtoken-bg{
+  position: absolute;
+  margin-top: -25px;
+  z-index: -1;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

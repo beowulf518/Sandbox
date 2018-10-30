@@ -1,0 +1,153 @@
+.sandtoken{
+
+    max-width: 1575px;
+    background-color: #292929;
+    margin: auto;
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    margin-top: 141px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+    
+    &-zone{
+        
+       position: relative; 
+        top: 100px;
+    }
+
+    &-top-bg{
+        width: 100%;
+        max-width: 1575px;
+        height: 100px;
+        content: " ";
+        position: absolute;
+        background-image: url("../images/top-trangle-black.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 100px, cover;
+        margin: auto;
+        top: -100px;
+        z-index: -1;
+    }
+
+    &-bottom-bg{
+        width: 100%;
+        max-width: 1575px;
+        height: 375px;
+        content: " ";
+        position: absolute;
+        background-image: url("../images/bottom-black-big.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: auto 375px, cover;
+        margin: auto;
+        bottom: -375px;
+        z-index: -1;
+    }
+
+    &-title{
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 23px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        
+    }
+
+    &-description{
+        width:70%;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 41px;
+        
+    }
+
+    &-items{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 280px;
+            margin-top: 51px;
+            &-avatar{
+                width: 271px;
+                height: 271px; 
+                background-image: url("../images/circle-innovation.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            &-title{
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 23px;
+                text-transform: uppercase;
+                margin-top: 22px;
+                
+            }
+            &-description{
+                color: #ffffff;
+                font-family: "Montserrat";
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 15px;
+                margin-top: 43px;
+                width: 80%;
+            }
+
+
+
+            
+        }
+
+    }
+
+    &-economy{
+        color: #ffffff;
+        margin-top: 75px;
+        margin-bottom: -150px;
+
+        &-title{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 23px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        &-description{
+            font-size: 16px;
+            font-weight: 400;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+    }
+}

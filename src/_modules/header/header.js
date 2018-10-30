@@ -19,6 +19,7 @@ const Header = () => {
   * Calls rAF if it's not already
   * been done already
   */
+
   function requestTick() {
     if(!ticking) {
       requestAnimationFrame(update);
@@ -30,6 +31,7 @@ const Header = () => {
   * Our animation callback
   */
   function update() {
+    
     if (lastScrollY >= 20){
       header.classList.add('fixed');
     } else {
@@ -48,7 +50,7 @@ const Header = () => {
   }
 
   // only listen for scroll events
-  window.addEventListener('scroll', onScroll, false);
+  //window.addEventListener('scroll', onScroll, false);
 };
 
 export default Header()

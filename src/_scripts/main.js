@@ -5,21 +5,19 @@
 
 import $ from 'jquery';
 import Nav from '../_modules/nav/nav';
-import Person from '../_modules/person/person';
-import '../_modules/modal/modal';
 import Swiper from 'swiper';
 require('../_modules/header/header');
 import ScrollReveal from 'scrollreveal';
-
+require('./chart');
 $(() => {
 
   var interval= setInterval(function () { 
         
-    doALoadOfStuff();
+     doALoadOfStuff();
+      //videoplay.play();
      //videoplay.play();
-    //videoplay.play();
 
-  }, 300);
+   }, 300);
    
 
   var swiper1 = new Swiper('.swiper-container1', {
@@ -93,7 +91,7 @@ $(() => {
   //*var ScrollReveal = require('scrollreveal');
 
   new Nav();
-  new Person();
+
 
   const options = {
       duration : 400,
@@ -111,7 +109,7 @@ $(() => {
  ///////Count down///////
   var target_date = new Date('November 23, 2018 00:00:00').getTime();
   var current_date = new Date().getTime();
-  console.log(target_date);
+
    // set the countdown date
   var days, hours, minutes, seconds; // variables for time units
 
@@ -142,7 +140,11 @@ $(() => {
     seconds = pad( parseInt( seconds_left % 60 ) );
 
     // format countdown string + set tag value
-    countdown.innerHTML = "<span class='hero-span'>" + days + "</span><span class = 'hero-span'>" + hours + "</span><span class = 'hero-span'>" + minutes + "</span><span class = 'hero-span'>" + seconds + "</span>"; 
+    countdown.innerHTML = 
+    "<svg height='110' width='110'> <circle cx='55' cy='55' r='52' stroke='#fafafa' stroke-width='3' fill='rgba(0,0,0,0.45)' style='fill-opacity: .25;'  /> <circle cx='55' cy='55' r='40' stroke='#fafafa' stroke-width='5' fill='#fafafa' />   <text y='60' x='55'  text-anchor='middle' fill='#292929' style='font-size:38px; font-weight: 700;'>"+ days +"</text> <text y='80' x='55'  text-anchor='middle' fill='#292929' style='font-size:12px; font-weight: 400;'>Days</text>  </svg>"+
+    "<svg height='110' width='110'> <circle cx='55' cy='55' r='52' stroke='#fafafa' stroke-width='3' fill='rgba(0,0,0,0.45)' style='fill-opacity: .25;' /> <circle cx='55' cy='55' r='40' stroke='#fafafa' stroke-width='5' fill='#fafafa' />   <text y='60' x='55'  text-anchor='middle' fill='#292929' style='font-size:38px; font-weight: 700;'>"+ hours +"</text> <text y='80' x='55'  text-anchor='middle' fill='#292929' style='font-size:12px; font-weight: 400;'>Hours</text>  </svg>"+
+    "<svg height='110' width='110'> <circle cx='55' cy='55' r='52' stroke='#fafafa' stroke-width='3' fill='rgba(0,0,0,0.45)' style='fill-opacity: .25;' /> <circle cx='55' cy='55' r='40' stroke='#fafafa' stroke-width='5' fill='#fafafa' />   <text y='60' x='55'  text-anchor='middle' fill='#292929' style='font-size:38px; font-weight: 700;'>"+ minutes +"</text> <text y='80' x='55'  text-anchor='middle' fill='#292929' style='font-size:12px; font-weight: 400;'>Minutes</text>  </svg>"+
+    "<svg height='110' width='110'> <circle cx='55' cy='55' r='52' stroke='#fafafa' stroke-width='3' fill='rgba(0,0,0,0.45)' style='fill-opacity: .25;' /> <circle cx='55' cy='55' r='40' stroke='#fafafa' stroke-width='5' fill='#fafafa' />   <text y='60' x='55'  text-anchor='middle' fill='#292929' style='font-size:38px; font-weight: 700;'>"+ seconds +"</text> <text y='80' x='55'  text-anchor='middle' fill='#292929' style='font-size:12px; font-weight: 400;'>Seconds</text>  </svg>";
   }
 
   function pad(n) {
@@ -258,7 +260,6 @@ $(() => {
 
   function doALoadOfStuff() {
       //do a load r stuff
-     
     var $wrapper = $(".hero-video");
     var $video = $(".hero-video-core");
     var video = $video[0];
@@ -286,6 +287,7 @@ $(() => {
         height: wrapperHeight + 2
       });
     }
+    
   }
 
   function StartALoadOfStuff() {
@@ -320,6 +322,8 @@ $(() => {
 
   
   
-  StartALoadOfStuff();
+ StartALoadOfStuff();
+
+
 
 });

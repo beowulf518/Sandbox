@@ -1,0 +1,76 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import '_modules/link/link.nunjucks' as link %}
+{% import '_modules/header/header.nunjucks' as header %}
+
+
+{% import '_modules/footer/footer.nunjucks' as footer %}
+
+
+{% block content %}
+<header class="zone zone-header">
+  {{ header.content() }}
+</header>
+<main id="content">
+    <div  class="sandtoken-bg">
+        <img  src="../images/token_middle.png" />
+    </div>
+
+    <div class="team-zone">
+        <div class="team">
+            <h2 class="team-title">{{_.team.title}}</h2>
+            <p class="team-subtitle"> {{_.team.subtitle}}</p>
+            <p class="team-paragraph"> {{_.team.paragraph}}</p>
+            <div class="team-info">
+                {% for item in _.team.others %}
+                    <div class="team-item">
+                        <div class="team-item-info">
+                            <p class="info-value">{{ item.value }}</p>
+                            <p class="info-text">{{ item.text }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="team-core">
+                {% for item in _.team.items %}
+                    <div class="team-core-item">
+                        <div class="item-photo"> 
+                            <img src="{{item.image}}" />
+                        </div>
+                        <p class="item-name"> {{item.name}} </p>
+                        <p class="item-position"> {{item.position}} </p>
+                    </div>
+                {% endfor %}
+                {% for item in _.contributors.items %}
+                    <div class="team-core-item contributors">
+                        <div class="item-photo"> 
+                            <img src="{{item.image}}" />
+                        </div>
+                        <p class="item-name"> {{item.name}} </p>
+                        <p class="item-position"> {{item.position}} </p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="team-advisors-title title"> {{_.advisors.title}} <h2>
+
+            <div class="team-core">
+                {% for item in _.advisors.items %}
+                    <div class="team-core-item">
+                        <div class="item-photo"> 
+                            <img src="{{item.image}}" />
+                        </div>
+                        <p class="item-name"> {{item.name}} </p>
+                        <p class="item-position"> {{item.position}} </p>
+                    </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="zone footer-zone">
+        {{ footer.content() }}
+    </div>
+</main>
+{% endblock %}

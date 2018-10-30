@@ -4,20 +4,35 @@
 {% set _class = spec.class or '' %}
 
 <footer class="footer {{spec.class}}">
-  <img class="footer-logo" src="../images/logo.svg" alt="">
+  <img class="footer-logo" src="../images/Logo.svg" alt="">
   <div class="footer-right">
-    <p class="footer-title">{{ _.footer.text }}</p>
-    <ul class="footer-list">
+    <div class="footer-subscribe">
+      <input class="subscribe-input" type="text" placeholder="Please enter your email" />
+      <button class="subscribe-btn"> subscribe </button>
+    </div>
+    <div class="footer-right-center">
+      <p class="footer-title">Join our community</p>
+      <ul class="footer-list">
 
-      {% for item in _.footer.social %}
-      <li class="footer-list_item">
-        <a class="footer-list_link ga-event" href="{{ item.url }}" data-gacategory="Community" data-gaactions="{{ item.alt }}">
-          <img src="{{ item.image }}" alt="{{ item.alt }}">
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    <img class="footer-right_img" src="../images/footer.png" alt="">
+        {% for item in _.footer.social %}
+        <li class="footer-list_item">
+          <a class="footer-list_link ga-event" href="{{ item.url }}" data-gacategory="Community" data-gaactions="{{ item.alt }}">
+            <img src="{{ item.image }}" alt="{{ item.alt }}">
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="footer-right-bottom">
+      <p class="copyrigth">Copyright © 2012-2018, The Sandbox. All Rights Reserved.</p>
+      <div>
+        <p class="term">TERMS</p>
+        <p class="privacy">PRIVACY POLICY</p>
+      </div>
+      
+    </div>
+     
   </div>
+  <img class="footer-right_img" src="../images/Building.png" alt="">
 </footer>
 {% endmacro %}
